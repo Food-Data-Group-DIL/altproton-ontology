@@ -1,0 +1,1762 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton/"
+     xml:base="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:altproton="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSynonym"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ontologyID -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ontologyID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#causes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#causes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#allergen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#allergenicity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#derivesFromPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#derivesFromPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodProduct"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#harvestedFoodMaterial"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#harvestedFoodMaterial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#derivesFromWhole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#derivesFromWhole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodProduct"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#harvestedFoodMaterial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasCostOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasCostOn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasGeneralIdentification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasGeneralIdentification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasQualityAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasQualityAspect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodProduct"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#quality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSocialIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSocialIndicator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSpecificProductName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSpecificProductName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSynonym -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSynonym">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Carbohydrate"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryFibre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#isA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#isA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#isSubjectedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#isSubjectedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#harvestedFoodMaterial"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodTransformationProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#isTypeOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#outputOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#outputOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodProduct"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#harvestedFoodMaterial"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#multicomponentFoodProduct"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agriculturalFoodProduction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodTransformationProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasTaxonomicIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasTaxonomicIdentifier"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Antinutritional_factors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Antinutritional_factors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutritional_quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Bacteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Bacteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#microbiologicalHazards"/>
+        <altproton:ontologyID>NCIT:C14187</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Cadmium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Cadmium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heavyMetal"/>
+        <altproton:hasSynonym>Cd</altproton:hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Carbohydrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Carbohydrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#macronutrient"/>
+        <altproton:hasSynonym>Dietary Carbohydrate</altproton:hasSynonym>
+        <altproton:hasSynonym>Total Carbohydrate</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:16646</altproton:ontologyID>
+        <altproton:ontologyID>NCIT:C68470</altproton:ontologyID>
+        <rdfs:label>Carbohydrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Copper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Copper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heavyMetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#EicosapentaenoicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#EicosapentaenoicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ω−3FattyAcid"/>
+        <altproton:hasSynonym>EPA</altproton:hasSynonym>
+        <altproton:ontologyID>NCIT:C67080</altproton:ontologyID>
+        <rdfs:label>Eicosapentaenoic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Ferulic_acid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Ferulic_acid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Antinutritional_factors"/>
+        <rdfs:label>Ferulic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sensoryProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Histidine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Histidine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid"/>
+        <altproton:hasSynonym>H</altproton:hasSynonym>
+        <altproton:hasSynonym>His</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:15971</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Iron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Iron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heavyMetal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Isoleucine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Isoleucine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid"/>
+        <altproton:hasSynonym>I</altproton:hasSynonym>
+        <altproton:hasSynonym>Ile</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17191</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heavyMetal"/>
+        <altproton:hasSynonym>Pb</altproton:hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Leucine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Leucine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid"/>
+        <altproton:hasSynonym>L</altproton:hasSynonym>
+        <altproton:hasSynonym>Leu</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:15603</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lipid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lipid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#macronutrient"/>
+        <altproton:hasSynonym>Dietary Fat</altproton:hasSynonym>
+        <altproton:hasSynonym>Dietary Lipid</altproton:hasSynonym>
+        <altproton:hasSynonym>Fat</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:18059</altproton:ontologyID>
+        <altproton:ontologyID>NCIT:C2317</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lysine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lysine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid"/>
+        <altproton:hasSynonym>K</altproton:hasSynonym>
+        <altproton:hasSynonym>Lys</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:18019</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Mercury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Mercury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heavyMetal"/>
+        <altproton:hasSynonym>Hg</altproton:hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Methionine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Methionine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid"/>
+        <altproton:hasSynonym>M</altproton:hasSynonym>
+        <altproton:hasSynonym>Met</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:16643</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#aminoAcidProfile"/>
+        <altproton:ontologyID>NCIT:C29596</altproton:ontologyID>
+        <rdfs:label>Non-Essential Amino Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Odour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Odour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sensoryProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Parasite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Parasite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#microbiologicalHazards"/>
+        <altproton:ontologyID>NCIT:C28176</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Phenylalanine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Phenylalanine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid"/>
+        <altproton:hasSynonym>F</altproton:hasSynonym>
+        <altproton:hasSynonym>Phe</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17295</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Prions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Prions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#microbiologicalHazards"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Protein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Protein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#macronutrient"/>
+        <altproton:hasSynonym>Dietary Protein</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:36080</altproton:ontologyID>
+        <altproton:ontologyID>NCIT:C68441</altproton:ontologyID>
+        <rdfs:label>Protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Rafinose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Rafinose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Antinutritional_factors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Stachyose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Stachyose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Antinutritional_factors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Texture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Texture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sensoryProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Threonine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Threonine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid"/>
+        <altproton:hasSynonym>T</altproton:hasSynonym>
+        <altproton:hasSynonym>Thr</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:16857</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Tin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Tin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heavyMetal"/>
+        <altproton:hasSynonym>Sn</altproton:hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Tryptophan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Tryptophan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid"/>
+        <altproton:hasSynonym>Trp</altproton:hasSynonym>
+        <altproton:hasSynonym>W</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:16828</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Valine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Valine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid"/>
+        <altproton:hasSynonym>V</altproton:hasSynonym>
+        <altproton:hasSynonym>Val</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:16414</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Verbascose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Verbascose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Antinutritional_factors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#microbiologicalHazards"/>
+        <altproton:ontologyID>NCIT:C14283</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agriculturalFoodProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agriculturalFoodProduction">
+        <altproton:ontologyID>FOODON:03530152</altproton:ontologyID>
+        <rdfs:label>agricultural food production</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agrochemical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agrochemical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalFoodContaminant"/>
+        <altproton:ontologyID>CHEBI:33286</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#alanine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#alanine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>A</altproton:hasSynonym>
+        <altproton:hasSynonym>Ala</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:16977</altproton:ontologyID>
+        <rdfs:label>Alanine (Ala/A)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#algalToxins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#algalToxins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#biotoxins"/>
+        <rdfs:label>Algal Toxins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#allergen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#allergen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSafety"/>
+        <rdfs:label>Allergen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#allergenicity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#allergenicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSafety"/>
+        <rdfs:label>Allergenicity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#aminoAcidProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#aminoAcidProfile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinQuality"/>
+        <rdfs:label>Amino acid profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#arachidonicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#arachidonicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ω−6_fatty_acid"/>
+        <altproton:hasSynonym>Arachidonic Acid</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:15843</altproton:ontologyID>
+        <altproton:ontologyID>NCIT:C282</altproton:ontologyID>
+        <rdfs:label>arachidonic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#arginine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#arginine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>Arg</altproton:hasSynonym>
+        <altproton:hasSynonym>R</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:16467</altproton:ontologyID>
+        <rdfs:label>Arginine (Arg/R)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#asparagine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#asparagine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>Asn</altproton:hasSynonym>
+        <altproton:hasSynonym>N</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17196</altproton:ontologyID>
+        <rdfs:label>Asparagine (Asn/N)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#asparticAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#asparticAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>Asp</altproton:hasSynonym>
+        <altproton:hasSynonym>D</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17053</altproton:ontologyID>
+        <rdfs:label>Aspartic Acid (Asp/D)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#bacterialToxins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#bacterialToxins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#biotoxins"/>
+        <rdfs:label>Bacterial Toxins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#biotoxins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#biotoxins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#naturalContaminants"/>
+        <rdfs:label>Biotoxins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#chemicalHazards -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#chemicalHazards">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSafety"/>
+        <rdfs:label>Chemical Hazards</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Colour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colourA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colourA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colour"/>
+        <rdfs:label>Colour A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colourB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colourB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colour"/>
+        <rdfs:label>Colour B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colourL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colourL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colour"/>
+        <rdfs:label>Colour L</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#conventionalFoodProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#conventionalFoodProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agriculturalFoodProduction"/>
+        <altproton:hasSynonym>Conventional farming</altproton:hasSynonym>
+        <rdfs:label>Conventional food production</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#cysteine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#cysteine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>C</altproton:hasSynonym>
+        <altproton:hasSynonym>Cys</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17561</altproton:ontologyID>
+        <rdfs:label>Cysteine (Cys/C)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryCalcium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryCalcium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryChlorine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryChlorine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryChromium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryChromium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryCopper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryCopper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryFibre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryFibre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Carbohydrate"/>
+        <altproton:hasSynonym>Fiber</altproton:hasSynonym>
+        <altproton:hasSynonym>Total dietary fibre</altproton:hasSynonym>
+        <altproton:ontologyID>CDNO:0000005</altproton:ontologyID>
+        <rdfs:label>Dietary Fibre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryFluorine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryFluorine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryIodine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryIodine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryIron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryIron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryMagnesium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryMagnesium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryManganese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryManganese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryMolybdenum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryMolybdenum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryPhosphorus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryPhosphorus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryPotassium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryPotassium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietarySelenium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietarySelenium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietarySodium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietarySodium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryZinc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryZinc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#docosahexaenoicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#docosahexaenoicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ω−3FattyAcid"/>
+        <altproton:hasSynonym>DHA</altproton:hasSynonym>
+        <altproton:hasSynonym>Doconexent</altproton:hasSynonym>
+        <altproton:hasSynonym>Docosahexaenoic Acid</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:36005</altproton:ontologyID>
+        <altproton:ontologyID>NCIT:C68345</altproton:ontologyID>
+        <rdfs:label>docosahexaenoic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#drugResidues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#drugResidues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agrochemical"/>
+        <rdfs:label>Drug residues</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dryLaserDiffraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dryLaserDiffraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSize"/>
+        <rdfs:label>Dry laser diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#emulsionStability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#emulsionStability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Emulsion stability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#endothermicPeaksInDSC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#endothermicPeaksInDSC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Endothermic peaks in DSC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalFoodContaminant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalFoodContaminant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSafety"/>
+        <altproton:ontologyID>CHEBI:78299</altproton:ontologyID>
+        <rdfs:label>Environmental food contaminant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalPollutants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalPollutants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalFoodContaminant"/>
+        <rdfs:label>Environmental pollutants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#aminoAcidProfile"/>
+        <altproton:ontologyID>NCIT:C29595</altproton:ontologyID>
+        <rdfs:label>Essential Amino Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fattyAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fattyAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lipid"/>
+        <altproton:hasSynonym>Dietary Fatty Acid</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:35366</altproton:ontologyID>
+        <altproton:ontologyID>NCIT:C68339</altproton:ontologyID>
+        <rdfs:label>Fatty Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#finalViscosityAfterHeatingAt25 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#finalViscosityAfterHeatingAt25">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#viscosity"/>
+        <rdfs:label>Final viscosity after heating at 25 °C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foamStability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foamStability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Foam stability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foamingCapacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foamingCapacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Foaming capacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodEnergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodEnergy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#macronutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodProduct">
+        <altproton:ontologyID>FOODON:00001002</altproton:ontologyID>
+        <rdfs:label>Food Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSafety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSafety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#quality"/>
+        <rdfs:label>Food safety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSource">
+        <altproton:ontologyID>FOODON:03411564</altproton:ontologyID>
+        <rdfs:label>food source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodTransformationProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodTransformationProcess">
+        <altproton:ontologyID>FOODON:00002451</altproton:ontologyID>
+        <rdfs:label>food transformation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodexCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodexCode">
+        <rdfs:label>Foodex code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fructose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fructose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#totalSugar"/>
+        <altproton:ontologyID>CHEBI:28757</altproton:ontologyID>
+        <rdfs:label>Fructose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fungalToxins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fungalToxins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#biotoxins"/>
+        <rdfs:label>Fungal toxins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#galactose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#galactose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#totalSugar"/>
+        <altproton:ontologyID>CHEBI:28260</altproton:ontologyID>
+        <rdfs:label>Galactose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#gellingCapacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#gellingCapacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Gelling capacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glucose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glucose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#totalSugar"/>
+        <altproton:ontologyID>CHEBI:17234</altproton:ontologyID>
+        <rdfs:label>Glucose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glutamicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glutamicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>E</altproton:hasSynonym>
+        <altproton:hasSynonym>Glu</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:16015</altproton:ontologyID>
+        <rdfs:label>Glutamic acid (Glu/E)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glutamine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glutamine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>Gln</altproton:hasSynonym>
+        <altproton:hasSynonym>Q</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:18050</altproton:ontologyID>
+        <rdfs:label>Glutamine (Gln/Q)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glycine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glycine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>G</altproton:hasSynonym>
+        <altproton:hasSynonym>Gly</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:15428</altproton:ontologyID>
+        <rdfs:label>Glycine (Gly/G)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#harvestedFoodMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#harvestedFoodMaterial">
+        <altproton:ontologyID>FOODON:00003374</altproton:ontologyID>
+        <rdfs:label>harvested food material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heavyMetal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heavyMetal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#chemicalHazards"/>
+        <altproton:ontologyID>CHEBI:5631</altproton:ontologyID>
+        <rdfs:label>heavy metal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#homocysteine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#homocysteine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>Hcy</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17230</altproton:ontologyID>
+        <rdfs:label>Homocysteine (Hcy)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#industrialChemicals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#industrialChemicals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalFoodContaminant"/>
+        <rdfs:label>Industrial Chemicals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#initialViscosityAt25 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#initialViscosityAt25">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#viscosity"/>
+        <rdfs:label>Initial viscosity at 25 °C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#insolubleDietaryFibre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#insolubleDietaryFibre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryFibre"/>
+        <altproton:ontologyID>CDNO:0000008</altproton:ontologyID>
+        <rdfs:label>Insoluble Dietary Fibre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#linoleicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#linoleicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ω−6_fatty_acid"/>
+        <altproton:hasSynonym>Linoleic Acid</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17351</altproton:ontologyID>
+        <altproton:ontologyID>NCIT:C615</altproton:ontologyID>
+        <rdfs:label>linoleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#macronutrient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#macronutrient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutrient"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#micronutrient"/>
+        <altproton:ontologyID>CHEBI:33937</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#microbiologicalHazards -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#microbiologicalHazards">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSafety"/>
+        <rdfs:label>Microbiological Hazards</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#micronutrient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#micronutrient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutrient"/>
+        <altproton:ontologyID>CHEBI:27027</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient"/>
+        <altproton:ontologyID>CHEBI:46662</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#micronutrient"/>
+        <altproton:hasSynonym>mineral</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:167164</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#monoUnsaturatedFattyAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#monoUnsaturatedFattyAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fattyAcid"/>
+        <altproton:hasSynonym>MUFA</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:25413</altproton:ontologyID>
+        <rdfs:label>Monounsaturated Fatty Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#multicomponentFoodProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#multicomponentFoodProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodProduct"/>
+        <altproton:ontologyID>FOODON:00002501</altproton:ontologyID>
+        <rdfs:label>Multi-component food product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#naturalContaminants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#naturalContaminants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSafety"/>
+        <rdfs:label>Natural contaminants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutrient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutrient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutritional_quality"/>
+        <altproton:ontologyID>CHEBI:33284</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutritional_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutritional_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#organicFoodProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#organicFoodProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agriculturalFoodProduction"/>
+        <altproton:hasSynonym>organic farming</altproton:hasSynonym>
+        <altproton:ontologyID>FOODON:03530291</altproton:ontologyID>
+        <rdfs:label>organic food production</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>pH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Particle size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeDryD10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeDryD10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dryLaserDiffraction"/>
+        <rdfs:label>Particle size dry D10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeDryD50 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeDryD50">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dryLaserDiffraction"/>
+        <rdfs:label>Particle size dry D50</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeDryD90 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeDryD90">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dryLaserDiffraction"/>
+        <rdfs:label>Particle size dry D90</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeWetD10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeWetD10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#wetLaserDiffraction"/>
+        <rdfs:label>Particle size wet D10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeWetD50 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeWetD50">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#wetLaserDiffraction"/>
+        <rdfs:label>Particle size wet D50</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeWetD90 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeWetD90">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#wetLaserDiffraction"/>
+        <rdfs:label>Particle size wet D90</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pesticideResidues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pesticideResidues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agrochemical"/>
+        <altproton:ontologyID>OMIT:0011564</altproton:ontologyID>
+        <rdfs:label>Pesticide Residues</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#phyticAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#phyticAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Antinutritional_factors"/>
+        <rdfs:label>Phytic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#plantToxins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#plantToxins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#biotoxins"/>
+        <rdfs:label>Plant toxins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#polyUnsaturatedFattyAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#polyUnsaturatedFattyAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fattyAcid"/>
+        <altproton:hasSynonym>PUFA</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:26208</altproton:ontologyID>
+        <rdfs:label>Polyunsaturated Fatty Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>P</altproton:hasSynonym>
+        <altproton:hasSynonym>Pro</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17203</altproton:ontologyID>
+        <rdfs:label>Proline (Pro/P)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinDigestibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinDigestibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinQuality"/>
+        <rdfs:label>Protein digestibility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutritional_quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Protein solubility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtNativePH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtNativePH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubility"/>
+        <rdfs:label>Protein solubility at native pH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH11 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH11">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubility"/>
+        <rdfs:label>Protein solubility at pH 11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubility"/>
+        <rdfs:label>Protein solubility at pH 3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubility"/>
+        <rdfs:label>Protein solubility at pH 5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubility"/>
+        <rdfs:label>Protein solubility at pH 7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubility"/>
+        <rdfs:label>Protein solubility at pH 9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pyrrolysine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pyrrolysine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>O</altproton:hasSynonym>
+        <altproton:hasSynonym>Pyl</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:21860</altproton:ontologyID>
+        <rdfs:label>Pyrrolysine (Pyl/O)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#quality">
+        <altproton:ontologyID>PATO:0000001</altproton:ontologyID>
+        <rdfs:label>Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#saturatedFattyAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#saturatedFattyAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fattyAcid"/>
+        <altproton:ontologyID>CHEBI:26607</altproton:ontologyID>
+        <rdfs:label>Saturated Fatty Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#scientificName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#scientificName">
+        <altproton:ontologyID>NCIT:C43459</altproton:ontologyID>
+        <rdfs:label>Scientific Name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#selenocysteine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#selenocysteine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>Sec</altproton:hasSynonym>
+        <altproton:hasSynonym>U</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:16633</altproton:ontologyID>
+        <rdfs:label>Selenocysteine (Sec/U)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sensoryProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sensoryProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#quality"/>
+        <rdfs:label>Sensory property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#serine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#serine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>S</altproton:hasSynonym>
+        <altproton:hasSynonym>Ser</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17115</altproton:ontologyID>
+        <rdfs:label>Serine (Ser/S)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#solubleDietaryFibre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#solubleDietaryFibre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryFibre"/>
+        <altproton:ontologyID>CDNO:0000006</altproton:ontologyID>
+        <rdfs:label>Soluble Dietary Fibre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sucrose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sucrose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#totalSugar"/>
+        <altproton:ontologyID>CHEBI:17992</altproton:ontologyID>
+        <rdfs:label>Sucrose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#quality"/>
+        <rdfs:label>Techno functional property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#totalSugar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#totalSugar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Carbohydrate"/>
+        <altproton:hasSynonym>Free sugar</altproton:hasSynonym>
+        <altproton:ontologyID>CDNO:0000004</altproton:ontologyID>
+        <altproton:ontologyID>NCIT:C68503</altproton:ontologyID>
+        <rdfs:label>Total Sugar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#tyrosine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#tyrosine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid"/>
+        <altproton:hasSynonym>Tyr</altproton:hasSynonym>
+        <altproton:hasSynonym>Y</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:17895</altproton:ontologyID>
+        <rdfs:label>Tyrosine (Tyr/Y)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#viscosity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#viscosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Viscosity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#viscosityAt95 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#viscosityAt95">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#viscosity"/>
+        <rdfs:label>Viscosity at 95 °C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitamin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitamin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#micronutrient"/>
+        <altproton:ontologyID>CHEBI:33229</altproton:ontologyID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#waterHoldingCapacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#waterHoldingCapacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty"/>
+        <rdfs:label>Water holding capacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#wetLaserDiffraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#wetLaserDiffraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSize"/>
+        <rdfs:label>Wet laser diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#α-linolenicAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#α-linolenicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ω−3FattyAcid"/>
+        <altproton:hasSynonym>ALA</altproton:hasSynonym>
+        <altproton:hasSynonym>Alpha-Linolenic Acid</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:27432</altproton:ontologyID>
+        <rdfs:label>α-linolenic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ω−3FattyAcid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ω−3FattyAcid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#polyUnsaturatedFattyAcid"/>
+        <altproton:hasSynonym>Omega-3 Fatty Acid</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:25681</altproton:ontologyID>
+        <altproton:ontologyID>NCIT:C493</altproton:ontologyID>
+        <rdfs:label>ω−3 Fatty Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ω−6_fatty_acid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ω−6_fatty_acid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#polyUnsaturatedFattyAcid"/>
+        <altproton:hasSynonym>Omega-6 Fatty Acid</altproton:hasSynonym>
+        <altproton:ontologyID>CHEBI:36009</altproton:ontologyID>
+        <altproton:ontologyID>NCTI:C2563</altproton:ontologyID>
+        <rdfs:label>ω−6 Fatty Acid</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
