@@ -1,0 +1,41 @@
+[PrefixDeclaration]
+:		http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton/
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+data:		http://www.semanticweb.org/d.rastogi/ontologies/2024/1/dcf_data#
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+altproton:	http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPID-c3a573f8162a4f1fa81f5023afa3b7bb
+target		<data:external_nutrients/{id}> a altproton:nutrient ; rdfs:label {nutrient} . 
+source		select id, nutrient from dcf_data.external_nutrients
+
+mappingId	MAPID-d72ec29f1bf648da89556bb032a7f006
+target		data:food_products/{id} a altproton:foodProduct ; rdfs:label {protein_source_or_food_product} . 
+source		select id,protein_source_or_food_product from dcf_data.food_sources
+
+mappingId	MAPID-725c3eaec4d4404d9e61496afd7dc5b9
+target		data:nutrients/{id} a altproton:nutrient ; rdfs:label {nutrient} . 
+source		select id,nutrient from dcf_data.nutrients
+
+mappingId	MAPID-d5f37a08bd124a819370639a2880932a
+target		data:nutritionalCompositionFacts/{food_product_id}/{nutrient_id} a altproton:nutritionalCompositionFacts ; altproton:hasFoodProduct data:food_products/{food_product_id} ; altproton:hasQualityAspect data:external_nutrients/{nutrient_id} ; altproton:hasNumericalValue {amount} ; altproton:hasUnit {unit} ; altproton:hasStandardDeviation {sd} ; altproton:hasAnalysisMethod {method_of_analysis} . 
+source		select fdsr.food_product_id ,ncf.nutrient_id,ncf.amount,ncf.unit,ncf.sd,ncf.method_of_analysis,ncf."comment"  from dcf_data.nutrient_composition_facts ncf
+			join dcf_data.food_data_source_relations fdsr
+			on ncf.food_data_source_relation_id = fdsr.id
+
+mappingId	MAPID-f38c2e42d1b248c291876c854955f97e
+target		data:antinutritional_factors/{id} a altproton:antinutritionalFactors ; rdfs:label {antinutritional_factor} . 
+source		select id,antinutritional_factor  from dcf_data.antinutritional_factors af
+
+mappingId	MAPID-c36b23033efc4974b8f225c13b0154ca
+target		data:anf_Facts/{food_product_id}/{anf_id} a altproton:anfFact ; altproton:hasFoodProduct data:food_products/{food_product_id} ; altproton:hasQualityAspect data:antinutritional_factors/{anf_id} ; altproton:hasNumericalValue {amount} ; altproton:hasUnit {unit} ; altproton:hasStandardDeviation {sd} ; altproton:hasAnalysisMethod {method_of_analysis} . 
+source		select fdsr.food_product_id ,ncf.anf_id ,ncf.amount,ncf.unit,ncf.sd,ncf.method_of_analysis,ncf."comment"  from dcf_data.antinutritional_factor_facts ncf
+			join dcf_data.food_data_source_relations fdsr
+			on ncf.food_data_source_relation_id = fdsr.id
+]]
+

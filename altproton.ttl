@@ -1,0 +1,2816 @@
+@prefix : <http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix data: <http://www.semanticweb.org/d.rastogi/ontologies/2024/1/dcf_data#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix altproton: <http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#> .
+@base <http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton/> .
+
+<http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#altprotonID
+altproton:altprotonID rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dataSource
+altproton:dataSource rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodCategory
+altproton:foodCategory rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodexCode
+altproton:foodexCode rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSynonym
+altproton:hasSynonym rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ontologyID
+altproton:ontologyID rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#affectsOn
+altproton:affectsOn rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#causes
+altproton:causes rdf:type owl:ObjectProperty ;
+                 rdfs:domain altproton:allergen ;
+                 rdfs:range altproton:allergenicity .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#componentOf
+altproton:componentOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#derives
+altproton:derives rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#derivesFrom
+altproton:derivesFrom rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#derivesFromPartOf
+altproton:derivesFromPartOf rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf altproton:derivesFrom .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#derivesFromWhole
+altproton:derivesFromWhole rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf altproton:derivesFrom .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#generates
+altproton:generates rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#has
+altproton:has rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasANF
+altproton:hasANF rdf:type owl:ObjectProperty ;
+                 rdfs:domain altproton:nutritionalCompositionFacts ;
+                 rdfs:range altproton:foodProduct .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasCostOn
+altproton:hasCostOn rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasFoodProduct
+altproton:hasFoodProduct rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasGeneralIdentification
+altproton:hasGeneralIdentification rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasNutrient
+altproton:hasNutrient rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasOrigin
+altproton:hasOrigin rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasPart
+altproton:hasPart rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasQualityAspect
+altproton:hasQualityAspect rdf:type owl:ObjectProperty ;
+                           rdfs:domain altproton:foodProduct ;
+                           rdfs:range altproton:quality .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSocialIndicator
+altproton:hasSocialIndicator rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSomeCause
+altproton:hasSomeCause rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSpecificProductName
+altproton:hasSpecificProductName rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSustainabilityAspect
+altproton:hasSustainabilityAspect rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasSynonym
+altproton:hasSynonym rdf:type owl:ObjectProperty ;
+                     rdfs:domain altproton:Carbohydrate ,
+                                 altproton:dietaryFibre .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasTaxonomicIdentifier
+altproton:hasTaxonomicIdentifier rdf:type owl:ObjectProperty ;
+                                 rdfs:domain altproton:foodSource ;
+                                 rdfs:range altproton:scientificName .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#isA
+altproton:isA rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#isSubjectedTo
+altproton:isSubjectedTo rdf:type owl:ObjectProperty ;
+                        rdfs:domain altproton:harvestedFoodMaterial ;
+                        rdfs:range altproton:foodTransformationProcess .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#isTypeOf
+altproton:isTypeOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#outputOf
+altproton:outputOf rdf:type owl:ObjectProperty ;
+                   rdfs:domain altproton:foodProduct ,
+                               altproton:harvestedFoodMaterial ,
+                               altproton:multicomponentFoodProduct ;
+                   rdfs:range altproton:agriculturalFoodProduction ,
+                              altproton:foodTransformationProcess .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#performs
+altproton:performs rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasAnalysisMethod
+altproton:hasAnalysisMethod rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf altproton:measure ;
+                            altproton:ontologyID "NCIT:C117039" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasDailyReferenceValue
+altproton:hasDailyReferenceValue rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain altproton:nutrient ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:label "Daily Reference Value" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasNumericalValue
+altproton:hasNumericalValue rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf altproton:measure ;
+                            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasQuantity
+altproton:hasQuantity rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf altproton:measure ;
+                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasStandardDeviation
+altproton:hasStandardDeviation rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf altproton:measure ;
+                               altproton:ontologyID "NCIT:C53322" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasStructuredValue
+altproton:hasStructuredValue rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf altproton:measure .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasTaxonomicIdentifier
+altproton:hasTaxonomicIdentifier rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasText
+altproton:hasText rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf altproton:measure .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#hasUnit
+altproton:hasUnit rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf altproton:measure ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#measure
+altproton:measure rdf:type owl:DatatypeProperty ;
+                  rdfs:domain altproton:LabourCosts ,
+                              altproton:capitalExpenditure ,
+                              altproton:flow ,
+                              altproton:indicator ,
+                              altproton:operatingExpenses ,
+                              altproton:quality .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#unitCost
+altproton:unitCost rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Bacteria
+altproton:Bacteria rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:microbiologicalHazards ;
+                   altproton:altprotonID "ALTPROTON:000024" ;
+                   altproton:ontologyID "NCIT:C14187" ;
+                   rdfs:label "Bacteria" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Biotechnological
+altproton:Biotechnological rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:proteinSourceOrigin ;
+                           rdfs:label "Biotechnological" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Cadmium
+altproton:Cadmium rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:heavyMetal ;
+                  altproton:altprotonID "ALTPROTON:000013" ;
+                  altproton:hasSynonym "Cd" ;
+                  rdfs:label "Cadmium" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Carbohydrate
+altproton:Carbohydrate rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:macronutrient ;
+                       altproton:altprotonID "ALTPROTON:000042" ;
+                       altproton:hasSynonym "Dietary Carbohydrate" ,
+                                            "Total Carbohydrate" ;
+                       altproton:ontologyID "CHEBI:16646" ,
+                                            "NCIT:C68470" ;
+                       rdfs:label "Carbohydrate" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Copper
+altproton:Copper rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:heavyMetal ;
+                 altproton:altprotonID "ALTPROTON:000014" ;
+                 altproton:hasSynonym "Cu" ;
+                 rdfs:label "Copper" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#EicosapentaenoicAcid
+altproton:EicosapentaenoicAcid rdf:type owl:Class ;
+                               rdfs:subClassOf altproton:omega3FattyAcid ;
+                               altproton:altprotonID "ALTPROTON:000061" ;
+                               altproton:hasSynonym "EPA" ;
+                               altproton:ontologyID "NCIT:C67080" ;
+                               rdfs:label "Eicosapentaenoic Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Ferulic_acid
+altproton:Ferulic_acid rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:antinutritionalFactors ;
+                       altproton:altprotonID "ALTPROTON:000035" ;
+                       altproton:ontologyID "CHEBI:17620" ;
+                       rdfs:label "Ferulic acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Flavour
+altproton:Flavour rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:sensoryProperty ;
+                  altproton:altprotonID "ALTPROTON:000121" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Histidine
+altproton:Histidine rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:essentialAminoAcid ;
+                    altproton:altprotonID "ALTPROTON:000098" ;
+                    altproton:hasSynonym "H" ,
+                                         "His" ;
+                    altproton:ontologyID "CHEBI:15971" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Iron
+altproton:Iron rdf:type owl:Class ;
+               rdfs:subClassOf altproton:heavyMetal ;
+               altproton:altprotonID "ALTPROTON:000015" ;
+               altproton:hasSynonym "Fe" ;
+               rdfs:label "Iron" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Isoleucine
+altproton:Isoleucine rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:essentialAminoAcid ;
+                     altproton:altprotonID "ALTPROTON:000099" ;
+                     altproton:hasSynonym "I" ,
+                                          "Ile" ;
+                     altproton:ontologyID "CHEBI:17191" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#LabourCosts
+altproton:LabourCosts rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty altproton:has ;
+                                        owl:someValuesFrom altproton:stakeholders
+                                      ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lead
+altproton:Lead rdf:type owl:Class ;
+               rdfs:subClassOf altproton:heavyMetal ;
+               altproton:altprotonID "ALTPROTON:000016" ;
+               altproton:hasSynonym "Pb" ;
+               rdfs:label "Lead" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Leucine
+altproton:Leucine rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:essentialAminoAcid ;
+                  altproton:altprotonID "ALTPROTON:000100" ;
+                  altproton:hasSynonym "L" ,
+                                       "Leu" ;
+                  altproton:ontologyID "CHEBI:15603" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lipid
+altproton:Lipid rdf:type owl:Class ;
+                rdfs:subClassOf altproton:macronutrient ;
+                altproton:altprotonID "ALTPROTON:000045" ;
+                altproton:hasSynonym "Dietary Fat" ,
+                                     "Dietary Lipid" ,
+                                     "Fat" ;
+                altproton:ontologyID "CHEBI:18059" ,
+                                     "NCIT:C2317" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Lysine
+altproton:Lysine rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:essentialAminoAcid ;
+                 altproton:altprotonID "ALTPROTON:000101" ;
+                 altproton:hasSynonym "K" ,
+                                      "Lys" ;
+                 altproton:ontologyID "CHEBI:18019" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Mercury
+altproton:Mercury rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:heavyMetal ;
+                  altproton:altprotonID "ALTPROTON:000017" ;
+                  altproton:hasSynonym "Hg" ;
+                  rdfs:label "Mercury" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Methionine
+altproton:Methionine rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:essentialAminoAcid ;
+                     altproton:altprotonID "ALTPROTON:000102" ;
+                     altproton:hasSynonym "M" ,
+                                          "Met" ;
+                     altproton:ontologyID "CHEBI:16643" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Mycotoxin
+altproton:Mycotoxin rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:naturalToxins ;
+                    altproton:altprotonID "ALTPROTON:000030" ;
+                    altproton:hasSynonym "Fungal toxins" ;
+                    altproton:ontologyID "CHEBI:25442" ;
+                    rdfs:label "Mycotoxin" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Non-EssentialAminoAcid
+altproton:Non-EssentialAminoAcid rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:aminoAcidProfile ;
+                                 altproton:altprotonID "ALTPROTON:000097" ;
+                                 altproton:ontologyID "NCIT:C29596" ;
+                                 rdfs:label "Non-Essential Amino Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Odour
+altproton:Odour rdf:type owl:Class ;
+                rdfs:subClassOf altproton:sensoryProperty ;
+                altproton:altprotonID "ALTPROTON:000122" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Parasite
+altproton:Parasite rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:microbiologicalHazards ;
+                   altproton:altprotonID "ALTPROTON:000025" ;
+                   altproton:ontologyID "NCIT:C28176" ;
+                   rdfs:label "Parasite" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Phenylalanine
+altproton:Phenylalanine rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:essentialAminoAcid ;
+                        altproton:altprotonID "ALTPROTON:000103" ;
+                        altproton:hasSynonym "F" ,
+                                             "Phe" ;
+                        altproton:ontologyID "CHEBI:17295" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Phytotoxin
+altproton:Phytotoxin rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:naturalToxins ;
+                     altproton:altprotonID "ALTPROTON:000031" ;
+                     altproton:hasSynonym "Plant toxins" ;
+                     altproton:ontologyID "CHEBI:38231" ;
+                     rdfs:label "Phytotoxin" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Prions
+altproton:Prions rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:microbiologicalHazards ;
+                 altproton:altprotonID "ALTPROTON:000026" ;
+                 rdfs:label "Prions" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Protein
+altproton:Protein rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:macronutrient ;
+                  altproton:altprotonID "ALTPROTON:000046" ;
+                  altproton:hasSynonym "Dietary Protein" ;
+                  altproton:ontologyID "CHEBI:36080" ,
+                                       "NCIT:C68441" ;
+                  rdfs:label "Protein" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Rafinose
+altproton:Rafinose rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:antinutritionalFactors ;
+                   altproton:altprotonID "ALTPROTON:000037" ;
+                   altproton:ontologyID "CHEBI:16634" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#SpirulinaSp
+altproton:SpirulinaSp rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:traditional ;
+                      rdfs:label "Spirulina Sp." .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Stachyose
+altproton:Stachyose rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:antinutritionalFactors ;
+                    altproton:altprotonID "ALTPROTON:000038" ;
+                    altproton:ontologyID "CHEBI:17164" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Texture
+altproton:Texture rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:sensoryProperty ;
+                  altproton:altprotonID "ALTPROTON:000123" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Threonine
+altproton:Threonine rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:essentialAminoAcid ;
+                    altproton:altprotonID "ALTPROTON:000104" ;
+                    altproton:hasSynonym "T" ,
+                                         "Thr" ;
+                    altproton:ontologyID "CHEBI:16857" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Tin
+altproton:Tin rdf:type owl:Class ;
+              rdfs:subClassOf altproton:heavyMetal ;
+              altproton:altprotonID "ALTPROTON:000018" ;
+              altproton:hasSynonym "Sn" ;
+              rdfs:label "Tin" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Tryptophan
+altproton:Tryptophan rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:essentialAminoAcid ;
+                     altproton:altprotonID "ALTPROTON:000105" ;
+                     altproton:hasSynonym "Trp" ,
+                                          "W" ;
+                     altproton:ontologyID "CHEBI:16828" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Valine
+altproton:Valine rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:essentialAminoAcid ;
+                 altproton:altprotonID "ALTPROTON:000106" ;
+                 altproton:hasSynonym "V" ,
+                                      "Val" ;
+                 altproton:ontologyID "CHEBI:16414" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Verbascose
+altproton:Verbascose rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:antinutritionalFactors ;
+                     altproton:altprotonID "ALTPROTON:000039" ;
+                     altproton:ontologyID "CHEBI:28586" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#Virus
+altproton:Virus rdf:type owl:Class ;
+                rdfs:subClassOf altproton:microbiologicalHazards ;
+                altproton:altprotonID "ALTPROTON:000027" ;
+                altproton:ontologyID "NCIT:C14283" ;
+                rdfs:label "Virus" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#accessToMaterialResources
+altproton:accessToMaterialResources rdf:type owl:Class ;
+                                    rdfs:subClassOf altproton:socialImpacts ;
+                                    rdfs:label "Access to material resources" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#acidification
+altproton:acidification rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:environmentalImpacts ;
+                        rdfs:label "Acidification" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#activity
+altproton:activity rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty altproton:has ;
+                                     owl:someValuesFrom altproton:flow
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty altproton:has ;
+                                     owl:someValuesFrom altproton:location
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty altproton:has ;
+                                     owl:someValuesFrom altproton:temporalIdentification
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty altproton:outputOf ;
+                                     owl:someValuesFrom altproton:proteinSource
+                                   ] ;
+                   rdfs:label "Activity" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agriculturalFoodProduction
+altproton:agriculturalFoodProduction rdf:type owl:Class ;
+                                     altproton:ontologyID "FOODON:03530152" ;
+                                     rdfs:label "agricultural food production" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agriculturalLand
+altproton:agriculturalLand rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:utilities ;
+                           rdfs:label "Agricultural Land" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#agrochemical
+altproton:agrochemical rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:environmentalFoodContaminant ;
+                       altproton:altprotonID "ALTPROTON:000019" ;
+                       altproton:ontologyID "CHEBI:33286" ;
+                       rdfs:label "agrochemical" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#alanine
+altproton:alanine rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                  altproton:altprotonID "ALTPROTON:000107" ;
+                  altproton:hasSynonym "A" ,
+                                       "Ala" ;
+                  altproton:ontologyID "CHEBI:16977" ;
+                  rdfs:label "Alanine (Ala/A)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#algalToxins
+altproton:algalToxins rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:naturalToxins ;
+                      altproton:altprotonID "ALTPROTON:000028" ;
+                      rdfs:label "Algal Toxins" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#algeaBased
+altproton:algeaBased rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:proteinSourceOrigin ;
+                     rdfs:label "Algae-based" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#allergen
+altproton:allergen rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:foodSafety ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty altproton:causes ;
+                                     owl:someValuesFrom altproton:allergenicity
+                                   ] ;
+                   altproton:altprotonID "ALTPROTON:000006" ;
+                   rdfs:label "Allergen" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#allergenicity
+altproton:allergenicity rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:foodSafety ;
+                        altproton:altprotonID "ALTPROTON:000007" ;
+                        rdfs:label "Allergenicity" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#alphaLinolenicAcid
+altproton:alphaLinolenicAcid rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:omega3FattyAcid ;
+                             altproton:altprotonID "ALTPROTON:000062" ;
+                             altproton:hasSynonym "ALA" ,
+                                                  "Alpha-Linolenic Acid" ;
+                             altproton:ontologyID "CHEBI:27432" ;
+                             rdfs:label "α-linolenic Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#aminoAcidProfile
+altproton:aminoAcidProfile rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:proteinQuality ;
+                           altproton:altprotonID "ALTPROTON:000094" ;
+                           rdfs:label "Amino acid profile" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#anfFact
+altproton:anfFact rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:facts .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#animalBased
+altproton:animalBased rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:proteinSourceOrigin ;
+                      rdfs:label "Animal-based" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#antinutritionalFactors
+altproton:antinutritionalFactors rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:nutritionalQuality ;
+                                 altproton:altprotonID "ALTPROTON:000032" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#arachidonicAcid
+altproton:arachidonicAcid rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:omega6FattyAcid ;
+                          altproton:altprotonID "ALTPROTON:000063" ;
+                          altproton:hasSynonym "Arachidonic Acid" ;
+                          altproton:ontologyID "CHEBI:15843" ,
+                                               "NCIT:C282" ;
+                          rdfs:label "arachidonic acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#arginine
+altproton:arginine rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                   altproton:altprotonID "ALTPROTON:000108" ;
+                   altproton:hasSynonym "Arg" ,
+                                        "R" ;
+                   altproton:ontologyID "CHEBI:16467" ;
+                   rdfs:label "Arginine (Arg/R)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#asparagine
+altproton:asparagine rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                     altproton:altprotonID "ALTPROTON:000109" ;
+                     altproton:hasSynonym "Asn" ,
+                                          "N" ;
+                     altproton:ontologyID "CHEBI:17196" ;
+                     rdfs:label "Asparagine (Asn/N)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#asparticAcid
+altproton:asparticAcid rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                       altproton:altprotonID "ALTPROTON:000110" ;
+                       altproton:hasSynonym "Asp" ,
+                                            "D" ;
+                       altproton:ontologyID "CHEBI:17053" ;
+                       rdfs:label "Aspartic Acid (Asp/D)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#avoidedProduct
+altproton:avoidedProduct rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:output ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:generates ;
+                                           owl:someValuesFrom altproton:revenue
+                                         ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#bacteriaBased
+altproton:bacteriaBased rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:proteinSourceOrigin ;
+                        rdfs:label "Bacteria -based" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#bacterialToxins
+altproton:bacterialToxins rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:naturalToxins ;
+                          altproton:altprotonID "ALTPROTON:000029" ;
+                          altproton:ontologyID "OMIT:0002803" ;
+                          rdfs:label "Bacterial Toxins" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#beef
+altproton:beef rdf:type owl:Class ;
+               rdfs:subClassOf altproton:traditional ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty altproton:hasGeneralIdentification ;
+                                 owl:allValuesFrom altproton:animalBased
+                               ] ;
+               rdfs:label "Beef" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#buildings
+altproton:buildings rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:utilities ;
+                    rdfs:label "Buildings" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#capexOfTheActor
+altproton:capexOfTheActor rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:economicalImpacts ;
+                          rdfs:label "Capex of the actor" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#capitalExpenditure
+altproton:capitalExpenditure rdf:type owl:Class ;
+                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty altproton:hasCostOn ;
+                                               owl:someValuesFrom altproton:agriculturalLand
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty altproton:hasCostOn ;
+                                               owl:someValuesFrom altproton:buildings
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty altproton:hasCostOn ;
+                                               owl:someValuesFrom altproton:infrastructure
+                                             ] ;
+                             rdfs:label "Capital Expenditure" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#chemicalHazards
+altproton:chemicalHazards rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:foodSafety ;
+                          altproton:altprotonID "ALTPROTON:000008" ;
+                          rdfs:label "Chemical Hazards" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#chicken
+altproton:chicken rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:traditional ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasGeneralIdentification ;
+                                    owl:allValuesFrom altproton:animalBased
+                                  ] ;
+                  rdfs:label "Chicken" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#chickpea
+altproton:chickpea rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:novel ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty altproton:hasGeneralIdentification ;
+                                     owl:allValuesFrom altproton:plantBased
+                                   ] ;
+                   rdfs:label "Chickpea" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#childLabour
+altproton:childLabour rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:socialImpacts ;
+                      rdfs:label "Child labour" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#chlorella
+altproton:chlorella rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:novel ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty altproton:hasGeneralIdentification ;
+                                      owl:allValuesFrom altproton:algeaBased
+                                    ] ;
+                    rdfs:label "Chlorella" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#circularityIndex
+altproton:circularityIndex rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:environmentalImpacts ;
+                           rdfs:label "Circularity Index" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#climateChangeTotal
+altproton:climateChangeTotal rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:environmentalImpacts ;
+                             rdfs:label "Climate change, total" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colour
+altproton:colour rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:technofunctionalProperty ;
+                 altproton:altprotonID "ALTPROTON:000124" ;
+                 rdfs:label "Colour" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colourA
+altproton:colourA rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:colour ;
+                  rdfs:label "Colour A" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colourB
+altproton:colourB rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:colour ;
+                  rdfs:label "Colour B" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#colourL
+altproton:colourL rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:colour ;
+                  rdfs:label "Colour L" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#contributionToEconomicDevelopment
+altproton:contributionToEconomicDevelopment rdf:type owl:Class ;
+                                            rdfs:subClassOf altproton:socialImpacts ;
+                                            rdfs:label "Contribution to economic development" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#conventionalFoodProduction
+altproton:conventionalFoodProduction rdf:type owl:Class ;
+                                     rdfs:subClassOf altproton:agriculturalFoodProduction ;
+                                     altproton:hasSynonym "Conventional farming" ;
+                                     rdfs:label "Conventional food production" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#corruption
+altproton:corruption rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:socialImpacts ;
+                     rdfs:label "Corruption" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#cricket
+altproton:cricket rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:novel ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasGeneralIdentification ;
+                                    owl:allValuesFrom altproton:animalBased
+                                  ] ;
+                  rdfs:label "Cricket" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#culturedBeef
+altproton:culturedBeef rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:novel ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty altproton:hasGeneralIdentification ;
+                                         owl:allValuesFrom altproton:Biotechnological
+                                       ] ;
+                       rdfs:label "Cultured beef" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#cysteine
+altproton:cysteine rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                   altproton:altprotonID "ALTPROTON:000111" ;
+                   altproton:hasSynonym "C" ,
+                                        "Cys" ;
+                   altproton:ontologyID "CHEBI:17561" ;
+                   rdfs:label "Cysteine (Cys/C)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#deviceSet
+altproton:deviceSet rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:plannedProcess ;
+                    rdfs:label "Device set" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryCalcium
+altproton:dietaryCalcium rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:mineral_nutrient ;
+                         altproton:altprotonID "ALTPROTON:000067" ;
+                         altproton:hasSynonym "Ca" ,
+                                              "Calcium" ;
+                         altproton:ontologyID "NCIT:C68241" ;
+                         rdfs:label "Dietary Calcium" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryChlorine
+altproton:dietaryChlorine rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:mineral_nutrient ;
+                          altproton:altprotonID "ALTPROTON:000068" ;
+                          altproton:ontologyID "CDNO:0000016" ;
+                          rdfs:label "dietary chlorine" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryChromium
+altproton:dietaryChromium rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:mineral_nutrient ;
+                          altproton:altprotonID "ALTPROTON:000069" ;
+                          altproton:hasSynonym "Chromium" ,
+                                               "Cr" ;
+                          altproton:ontologyID "CDNO:0000022" ;
+                          rdfs:label "dietary chromium" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryCopper
+altproton:dietaryCopper rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:mineral_nutrient ;
+                        altproton:altprotonID "ALTPROTON:000070" ;
+                        altproton:hasSynonym "Copper" ,
+                                             "Cu" ;
+                        altproton:ontologyID "CDNO:0000023" ;
+                        rdfs:label "dietary copper" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryFibre
+altproton:dietaryFibre rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:macronutrient ;
+                       altproton:altprotonID "ALTPROTON:000043" ;
+                       altproton:hasSynonym "Fiber" ,
+                                            "Total dietary fibre" ;
+                       altproton:ontologyID "CDNO:0000005" ;
+                       rdfs:label "Dietary fibre" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryFluorine
+altproton:dietaryFluorine rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:mineral_nutrient ;
+                          altproton:altprotonID "ALTPROTON:000071" ;
+                          altproton:ontologyID "CDNO:0000024" ;
+                          rdfs:label "dietary fluorine" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryIodine
+altproton:dietaryIodine rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:mineral_nutrient ;
+                        altproton:altprotonID "ALTPROTON:000072" ;
+                        altproton:ontologyID "CDNO:0000025" ;
+                        rdfs:label "dietary iodine" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryIron
+altproton:dietaryIron rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:mineral_nutrient ;
+                      altproton:altprotonID "ALTPROTON:000073" ;
+                      altproton:hasSynonym "Fe" ,
+                                           "Iron" ;
+                      altproton:ontologyID "NCIT:C68256" ;
+                      rdfs:label "Dietary Iron" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryMagnesium
+altproton:dietaryMagnesium rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:mineral_nutrient ;
+                           altproton:altprotonID "ALTPROTON:000074" ;
+                           altproton:hasSynonym "Magnesium" ,
+                                                "Mg" ;
+                           altproton:ontologyID "NCIT:C68264" ;
+                           rdfs:label "Dietary Magnesium" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryManganese
+altproton:dietaryManganese rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:mineral_nutrient ;
+                           altproton:altprotonID "ALTPROTON:000075" ;
+                           altproton:hasSynonym "Manganese" ,
+                                                "Mn" ;
+                           altproton:ontologyID "NCIT:C68266" ;
+                           rdfs:label "Dietary Manganese" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryMolybdenum
+altproton:dietaryMolybdenum rdf:type owl:Class ;
+                            rdfs:subClassOf altproton:mineral_nutrient ;
+                            altproton:altprotonID "ALTPROTON:000076" ;
+                            altproton:hasSynonym "Mo" ,
+                                                 "Molybdenum" ;
+                            altproton:ontologyID "NCIT:C68272" ;
+                            rdfs:label "Dietary Molybdenum" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryPhosphorus
+altproton:dietaryPhosphorus rdf:type owl:Class ;
+                            rdfs:subClassOf altproton:mineral_nutrient ;
+                            altproton:altprotonID "ALTPROTON:000077" ;
+                            altproton:hasSynonym "P" ,
+                                                 "Phosphorus" ;
+                            altproton:ontologyID "NCIT:C68277" ;
+                            rdfs:label "Dietary Phosphorus" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryPotassium
+altproton:dietaryPotassium rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:mineral_nutrient ;
+                           altproton:altprotonID "ALTPROTON:000078" ;
+                           altproton:hasSynonym "K" ,
+                                                "Potassium" ;
+                           altproton:ontologyID "NCIT:C68279" ;
+                           rdfs:label "Dietary Potassium" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietarySelenium
+altproton:dietarySelenium rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:mineral_nutrient ;
+                          altproton:altprotonID "ALTPROTON:000079" ;
+                          altproton:hasSynonym "Se" ,
+                                               "Selenium" ;
+                          altproton:ontologyID "NCIT:C68281" ;
+                          rdfs:label "Dietary Selenium" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietarySodium
+altproton:dietarySodium rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:mineral_nutrient ;
+                        altproton:altprotonID "ALTPROTON:000080" ;
+                        altproton:hasSynonym "Na" ,
+                                             "Sodium" ;
+                        altproton:ontologyID "NCIT:C68287" ;
+                        rdfs:label "Dietary Sodium" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dietaryZinc
+altproton:dietaryZinc rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:mineral_nutrient ;
+                      altproton:altprotonID "ALTPROTON:000081" ;
+                      altproton:hasSynonym "Zinc" ,
+                                           "Zn" ;
+                      altproton:ontologyID "NCIT:C68295" ;
+                      rdfs:label "Dietary Zinc" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#discrimination
+altproton:discrimination rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:socialImpacts ;
+                         rdfs:label "Discrimination" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#docosahexaenoicAcid
+altproton:docosahexaenoicAcid rdf:type owl:Class ;
+                              rdfs:subClassOf altproton:omega3FattyAcid ;
+                              altproton:altprotonID "ALTPROTON:000060" ;
+                              altproton:hasSynonym "DHA" ,
+                                                   "Doconexent" ,
+                                                   "Docosahexaenoic Acid" ;
+                              altproton:ontologyID "CHEBI:36005" ,
+                                                   "NCIT:C68345" ;
+                              rdfs:label "docosahexaenoic acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#drugResidues
+altproton:drugResidues rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:agrochemical ;
+                       altproton:altprotonID "ALTPROTON:000022" ;
+                       rdfs:label "Drug residues" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#dryLaserDiffraction
+altproton:dryLaserDiffraction rdf:type owl:Class ;
+                              rdfs:subClassOf altproton:particleSize ;
+                              altproton:altprotonID "ALTPROTON:000135" ;
+                              rdfs:label "Dry laser diffraction" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#economicSustainability
+altproton:economicSustainability rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:sustainability ;
+                                 rdfs:label "Economic Sustainability" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#economicalImpacts
+altproton:economicalImpacts rdf:type owl:Class ;
+                            rdfs:subClassOf altproton:indicator ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:derives ;
+                                              owl:someValuesFrom altproton:economicSustainability
+                                            ] ;
+                            owl:disjointWith altproton:environmentalImpacts .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ecosystemServices
+altproton:ecosystemServices rdf:type owl:Class ;
+                            rdfs:subClassOf altproton:environmentalImpacts ;
+                            rdfs:label "Ecosystem services" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ecotoxicityFreshwater
+altproton:ecotoxicityFreshwater rdf:type owl:Class ;
+                                rdfs:subClassOf altproton:environmentalImpacts ;
+                                rdfs:label "Ecotoxicity, freshwater" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#egg
+altproton:egg rdf:type owl:Class ;
+              rdfs:subClassOf altproton:traditional ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty altproton:hasGeneralIdentification ;
+                                owl:allValuesFrom altproton:animalBased
+                              ] ;
+              rdfs:label "Egg" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#electricity
+altproton:electricity rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:utilities ;
+                      rdfs:label "Electricity" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#electricityHeat
+altproton:electricityHeat rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:inputsFromTechnosphere ;
+                          rdfs:label "Electricity/Heat" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#emission
+altproton:emission rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:output .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#emmisionToAir
+altproton:emmisionToAir rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:emission .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#emmisionToSoil
+altproton:emmisionToSoil rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:emission .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#emmisionToWater
+altproton:emmisionToWater rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:emission .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#emulsionStability
+altproton:emulsionStability rdf:type owl:Class ;
+                            rdfs:subClassOf altproton:technofunctionalProperty ;
+                            altproton:altprotonID "ALTPROTON:000125" ;
+                            rdfs:label "Emulsion stability" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#endothermicPeaksInDSC
+altproton:endothermicPeaksInDSC rdf:type owl:Class ;
+                                rdfs:subClassOf altproton:technofunctionalProperty ;
+                                altproton:altprotonID "ALTPROTON:000126" ;
+                                rdfs:label "Endothermic peaks in DSC" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalFoodContaminant
+altproton:environmentalFoodContaminant rdf:type owl:Class ;
+                                       rdfs:subClassOf altproton:foodSafety ;
+                                       altproton:altprotonID "ALTPROTON:000009" ;
+                                       altproton:ontologyID "CHEBI:78299" ;
+                                       rdfs:label "Environmental food contaminant" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalImpacts
+altproton:environmentalImpacts rdf:type owl:Class ;
+                               rdfs:subClassOf altproton:indicator ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty altproton:derives ;
+                                                 owl:someValuesFrom altproton:environmentalSustainability
+                                               ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalLevies
+altproton:environmentalLevies rdf:type owl:Class ;
+                              rdfs:subClassOf altproton:utilities ;
+                              rdfs:label "Environmental levies" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalPollutants
+altproton:environmentalPollutants rdf:type owl:Class ;
+                                  rdfs:subClassOf altproton:environmentalFoodContaminant ;
+                                  altproton:altprotonID "ALTPROTON:000020" ;
+                                  rdfs:label "Environmental pollutants" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#environmentalSustainability
+altproton:environmentalSustainability rdf:type owl:Class ;
+                                      rdfs:subClassOf altproton:sustainability ;
+                                      rdfs:label "Environmental Sustainability" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#equipment
+altproton:equipment rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:infrastructure ;
+                    rdfs:label "Equipment" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#essentialAminoAcid
+altproton:essentialAminoAcid rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:aminoAcidProfile ;
+                             altproton:altprotonID "ALTPROTON:000096" ;
+                             altproton:ontologyID "NCIT:C29595" ;
+                             rdfs:label "Essential Amino Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#eutrophicationFreshWater
+altproton:eutrophicationFreshWater rdf:type owl:Class ;
+                                   rdfs:subClassOf altproton:environmentalImpacts ;
+                                   rdfs:label "Eutrophication, freshwater" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#eutrophicationMarine
+altproton:eutrophicationMarine rdf:type owl:Class ;
+                               rdfs:subClassOf altproton:environmentalImpacts ;
+                               rdfs:label "Eutrophication, marine" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#eutrophicationTerrestrial
+altproton:eutrophicationTerrestrial rdf:type owl:Class ;
+                                    rdfs:subClassOf altproton:environmentalImpacts ;
+                                    rdfs:label "Eutrophication, terrestrial" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fabaBeans
+altproton:fabaBeans rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:novel ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty altproton:hasGeneralIdentification ;
+                                      owl:allValuesFrom altproton:plantBased
+                                    ] ;
+                    rdfs:label "Faba beans" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#facts
+altproton:facts rdf:type owl:Class ;
+                rdfs:label "Facts" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fairCompetition
+altproton:fairCompetition rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:socialImpacts ;
+                          rdfs:label "Fair competition" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fairSalary
+altproton:fairSalary rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:socialImpacts ;
+                     rdfs:label "Fair salary" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fattyAcid
+altproton:fattyAcid rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:Lipid ;
+                    altproton:altprotonID "ALTPROTON:000054" ;
+                    altproton:hasSynonym "Dietary Fatty Acid" ;
+                    altproton:ontologyID "CHEBI:35366" ,
+                                         "NCIT:C68339" ;
+                    rdfs:label "Fatty Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#finalViscosityAfterHeatingAt25
+altproton:finalViscosityAfterHeatingAt25 rdf:type owl:Class ;
+                                         rdfs:subClassOf altproton:viscosity ;
+                                         altproton:altprotonID "ALTPROTON:000149" ;
+                                         rdfs:label "Final viscosity after heating at 25 °C" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fish
+altproton:fish rdf:type owl:Class ;
+               rdfs:subClassOf altproton:traditional ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty altproton:hasGeneralIdentification ;
+                                 owl:allValuesFrom altproton:animalBased
+                               ] ;
+               rdfs:label "Fish" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fishSideStreams
+altproton:fishSideStreams rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:traditional ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty altproton:hasGeneralIdentification ;
+                                            owl:allValuesFrom altproton:animalBased
+                                          ] ;
+                          rdfs:label "Fish side streams" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fixedCostsOfTheActor
+altproton:fixedCostsOfTheActor rdf:type owl:Class ;
+                               rdfs:subClassOf altproton:economicalImpacts ;
+                               rdfs:label "Fixed costs of the actor" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#flow
+altproton:flow rdf:type owl:Class ;
+               rdfs:label "Flow" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foamStability
+altproton:foamStability rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:technofunctionalProperty ;
+                        altproton:altprotonID "ALTPROTON:000127" ;
+                        rdfs:label "Foam stability" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foamingCapacity
+altproton:foamingCapacity rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:technofunctionalProperty ;
+                          altproton:altprotonID "ALTPROTON:000128" ;
+                          rdfs:label "Foaming capacity" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodEnergy
+altproton:foodEnergy rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:macronutrient ;
+                     altproton:altprotonID "ALTPROTON:000044" ;
+                     altproton:hasSynonym "Caloric content" ,
+                                          "Calories" ,
+                                          "Dietary energy" ,
+                                          "Energy content" ;
+                     altproton:ontologyID "NCIT:C68544" ;
+                     rdfs:label "Food Energy" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodProduct
+altproton:foodProduct rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:proteinSource ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty altproton:derivesFrom ;
+                                        owl:someValuesFrom altproton:harvestedFoodMaterial
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty altproton:outputOf ;
+                                        owl:someValuesFrom altproton:foodTransformationProcess
+                                      ] ;
+                      altproton:ontologyID "FOODON:00001002" ;
+                      rdfs:label "Food Product" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodRecipe
+altproton:foodRecipe rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:componentOf ;
+                                           owl:someValuesFrom altproton:deviceSet
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:componentOf ;
+                                           owl:someValuesFrom altproton:ingredientSet
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:componentOf ;
+                                           owl:someValuesFrom altproton:instructionSet
+                                         ] ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty altproton:isA ;
+                                       owl:someValuesFrom altproton:planSpecification
+                                     ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSafety
+altproton:foodSafety rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:quality ;
+                     altproton:altprotonID "ALTPROTON:000002" ;
+                     altproton:ontologyID "OMIT:0027503" ;
+                     rdfs:label "Food safety" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodSource
+altproton:foodSource rdf:type owl:Class ;
+                     altproton:ontologyID "FOODON:03411564" ;
+                     rdfs:label "food source" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#foodTransformationProcess
+altproton:foodTransformationProcess rdf:type owl:Class ;
+                                    rdfs:subClassOf altproton:plannedProcess ;
+                                    altproton:ontologyID "FOODON:00002451" ;
+                                    rdfs:label "food transformation process" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#forcedLabour
+altproton:forcedLabour rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:socialImpacts ;
+                       rdfs:label "Forced labour" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#freeSugar
+altproton:freeSugar rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:Carbohydrate ;
+                    altproton:altprotonID "ALTPROTON:000047" ;
+                    altproton:hasSynonym "Free sugar" ;
+                    altproton:ontologyID "CDNO:0000004" ,
+                                         "NCIT:C68503" ;
+                    rdfs:label "Total Sugar" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fructose
+altproton:fructose rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:freeSugar ;
+                   altproton:altprotonID "ALTPROTON:000048" ;
+                   altproton:ontologyID "CHEBI:28757" ;
+                   rdfs:label "Fructose" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fuel
+altproton:fuel rdf:type owl:Class ;
+               rdfs:subClassOf altproton:utilities ;
+               rdfs:label "Fuel" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#fungiBased
+altproton:fungiBased rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:proteinSourceOrigin ;
+                     rdfs:label "Fungi-based" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#galactose
+altproton:galactose rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:freeSugar ;
+                    altproton:altprotonID "ALTPROTON:000049" ;
+                    altproton:ontologyID "CHEBI:28260" ;
+                    rdfs:label "Galactose" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#gellingCapacity
+altproton:gellingCapacity rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:technofunctionalProperty ;
+                          altproton:altprotonID "ALTPROTON:000129" ;
+                          rdfs:label "Gelling capacity" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#globalBiodiversityLoss
+altproton:globalBiodiversityLoss rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:environmentalImpacts ;
+                                 rdfs:label "Global biodiversity loss" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glucose
+altproton:glucose rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:freeSugar ;
+                  altproton:altprotonID "ALTPROTON:000050" ;
+                  altproton:ontologyID "CHEBI:17234" ;
+                  rdfs:label "Glucose" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glutamicAcid
+altproton:glutamicAcid rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                       altproton:altprotonID "ALTPROTON:000112" ;
+                       altproton:hasSynonym "E" ,
+                                            "Glu" ;
+                       altproton:ontologyID "CHEBI:16015" ;
+                       rdfs:label "Glutamic acid (Glu/E)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glutamine
+altproton:glutamine rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                    altproton:altprotonID "ALTPROTON:000113" ;
+                    altproton:hasSynonym "Gln" ,
+                                         "Q" ;
+                    altproton:ontologyID "CHEBI:18050" ;
+                    rdfs:label "Glutamine (Gln/Q)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#glycine
+altproton:glycine rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                  altproton:altprotonID "ALTPROTON:000114" ;
+                  altproton:hasSynonym "G" ,
+                                       "Gly" ;
+                  altproton:ontologyID "CHEBI:15428" ;
+                  rdfs:label "Glycine (Gly/G)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#harvestedFoodMaterial
+altproton:harvestedFoodMaterial rdf:type owl:Class ;
+                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                  owl:onProperty altproton:derivesFrom ;
+                                                  owl:someValuesFrom altproton:foodSource
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty altproton:isSubjectedTo ;
+                                                  owl:someValuesFrom altproton:foodTransformationProcess
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty altproton:outputOf ;
+                                                  owl:someValuesFrom altproton:agriculturalFoodProduction
+                                                ] ;
+                                altproton:ontologyID "FOODON:00003374" ;
+                                rdfs:label "harvested food material" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#healthAndSafety
+altproton:healthAndSafety rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:socialImpacts ;
+                          rdfs:label "Health and safety" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heat
+altproton:heat rdf:type owl:Class ;
+               rdfs:subClassOf altproton:utilities ;
+               rdfs:label "Heat" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#heavyMetal
+altproton:heavyMetal rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:chemicalHazards ;
+                     altproton:altprotonID "ALTPROTON:000012" ;
+                     altproton:ontologyID "CHEBI:5631" ;
+                     rdfs:label "heavy metal" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#homocysteine
+altproton:homocysteine rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                       altproton:altprotonID "ALTPROTON:000115" ;
+                       altproton:hasSynonym "Hcy" ;
+                       altproton:ontologyID "CHEBI:17230" ;
+                       rdfs:label "Homocysteine (Hcy)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#humanToxicityCancer
+altproton:humanToxicityCancer rdf:type owl:Class ;
+                              rdfs:subClassOf altproton:environmentalImpacts ;
+                              rdfs:label "Human toxicity, cancer" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#humanToxicityNonCancer
+altproton:humanToxicityNonCancer rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:environmentalImpacts ;
+                                 rdfs:label "Human toxicity, non-cancer" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#indicator
+altproton:indicator rdf:type owl:Class ;
+                    rdfs:label "Indicator" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#industrialChemicals
+altproton:industrialChemicals rdf:type owl:Class ;
+                              rdfs:subClassOf altproton:environmentalFoodContaminant ;
+                              altproton:altprotonID "ALTPROTON:000021" ;
+                              rdfs:label "Industrial Chemicals" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#infrastructure
+altproton:infrastructure rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:utilities ;
+                         rdfs:label "Infrastructure" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ingredientSet
+altproton:ingredientSet rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:plannedProcess ;
+                        rdfs:label "Ingredient set" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#initialViscosityAt25
+altproton:initialViscosityAt25 rdf:type owl:Class ;
+                               rdfs:subClassOf altproton:viscosity ;
+                               altproton:altprotonID "ALTPROTON:000150" ;
+                               rdfs:label "Initial viscosity at 25 °C" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#input
+altproton:input rdf:type owl:Class ;
+                rdfs:subClassOf altproton:flow ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty altproton:hasOrigin ;
+                                  owl:someValuesFrom altproton:location
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty altproton:hasSomeCause ;
+                                  owl:someValuesFrom altproton:capitalExpenditure
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty altproton:hasSomeCause ;
+                                  owl:someValuesFrom altproton:operatingExpenses
+                                ] ;
+                owl:disjointWith altproton:output ;
+                rdfs:label "Input" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#inputsFromNature
+altproton:inputsFromNature rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:input ;
+                           rdfs:label "Inputs from nature" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#inputsFromTechnosphere
+altproton:inputsFromTechnosphere rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:input ;
+                                 rdfs:label "Inputs from technosphere" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#insolubleDietaryFibre
+altproton:insolubleDietaryFibre rdf:type owl:Class ;
+                                rdfs:subClassOf altproton:dietaryFibre ;
+                                altproton:altprotonID "ALTPROTON:000052" ;
+                                altproton:ontologyID "CDNO:0000008" ;
+                                rdfs:label "Insoluble Dietary Fibre" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#instructionSet
+altproton:instructionSet rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:plannedProcess ;
+                         rdfs:label "Instruction set" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#insurance
+altproton:insurance rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:utilities ;
+                    rdfs:label "Insurance" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ionizingRadiationHumanHealthIonizing
+altproton:ionizingRadiationHumanHealthIonizing rdf:type owl:Class ;
+                                               rdfs:subClassOf altproton:environmentalImpacts ;
+                                               rdfs:label "Ionizing radiation, human health Ionizing" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#krill
+altproton:krill rdf:type owl:Class ;
+                rdfs:subClassOf altproton:traditional ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty altproton:hasGeneralIdentification ;
+                                  owl:allValuesFrom altproton:animalBased
+                                ] ;
+                rdfs:label "Krill" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#landUse
+altproton:landUse rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:environmentalImpacts ;
+                  rdfs:label "Land use" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#lentil
+altproton:lentil rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:novel ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty altproton:hasGeneralIdentification ;
+                                   owl:allValuesFrom altproton:plantBased
+                                 ] ;
+                 rdfs:label "Lentil" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#linoleicAcid
+altproton:linoleicAcid rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:omega6FattyAcid ;
+                       altproton:altprotonID "ALTPROTON:000064" ;
+                       altproton:hasSynonym "Linoleic Acid" ;
+                       altproton:ontologyID "CHEBI:17351" ,
+                                            "NCIT:C615" ;
+                       rdfs:label "linoleic acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#localCommunity
+altproton:localCommunity rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:stakeholders ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:hasSocialIndicator ;
+                                           owl:someValuesFrom altproton:accessToMaterialResources
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:hasSocialIndicator ;
+                                           owl:someValuesFrom altproton:contributionToEconomicDevelopment
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:hasSocialIndicator ;
+                                           owl:someValuesFrom altproton:localEmployment
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:hasSocialIndicator ;
+                                           owl:someValuesFrom altproton:migration
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:hasSocialIndicator ;
+                                           owl:someValuesFrom altproton:respectOfIndigenousRights
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:hasSocialIndicator ;
+                                           owl:someValuesFrom altproton:safeAndHealthyLivingConditions
+                                         ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#localEmployment
+altproton:localEmployment rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:socialImpacts ;
+                          rdfs:label "Local employment" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#location
+altproton:location rdf:type owl:Class ;
+                   rdfs:label "Location" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#machinery
+altproton:machinery rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:infrastructure ;
+                    rdfs:label "Machinery" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#macronutrient
+altproton:macronutrient rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:nutrient ;
+                        owl:disjointWith altproton:micronutrient ;
+                        altproton:altprotonID "ALTPROTON:000040" ;
+                        altproton:ontologyID "CHEBI:33937" ;
+                        rdfs:comment "Any nutrient required in large quantities by organisms throughout their life in order to orchestrate a range of physiological functions. Macronutrients are usually chemical elements (carbon, hydrogen, nitrogen, oxygen, phosphorus and sulfur) that humans consume in the largest quantities. Calcium, sodium, magnesium and potassium are sometimes included as macronutrients because they are required in relatively large quantities compared with other vitamins and minerals." .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#material
+altproton:material rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:utilities ;
+                   rdfs:label "Material" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#materialFuel
+altproton:materialFuel rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:inputsFromTechnosphere ;
+                       rdfs:label "Material/Fuel" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#microbiologicalHazards
+altproton:microbiologicalHazards rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:foodSafety ;
+                                 altproton:altprotonID "ALTPROTON:000010" ;
+                                 rdfs:label "Microbiological Hazards" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#micronutrient
+altproton:micronutrient rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:nutrient ;
+                        altproton:altprotonID "ALTPROTON:000041" ;
+                        altproton:ontologyID "CHEBI:27027" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#migration
+altproton:migration rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:socialImpacts ;
+                    rdfs:label "Migration" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#milk
+altproton:milk rdf:type owl:Class ;
+               rdfs:subClassOf altproton:traditional ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty altproton:hasGeneralIdentification ;
+                                 owl:allValuesFrom altproton:animalBased
+                               ] ;
+               rdfs:label "Milk" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral
+altproton:mineral rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:mineral_nutrient ;
+                  altproton:altprotonID "ALTPROTON:000082" ;
+                  altproton:ontologyID "CHEBI:46662" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#mineral_nutrient
+altproton:mineral_nutrient rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:micronutrient ;
+                           altproton:altprotonID "ALTPROTON:000065" ;
+                           altproton:hasSynonym "mineral" ;
+                           altproton:ontologyID "CHEBI:167164" ,
+                                                "CHEBI:46662" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#monoUnsaturatedFattyAcid
+altproton:monoUnsaturatedFattyAcid rdf:type owl:Class ;
+                                   rdfs:subClassOf altproton:fattyAcid ;
+                                   altproton:altprotonID "ALTPROTON:000055" ;
+                                   altproton:hasSynonym "MUFA" ;
+                                   altproton:ontologyID "CHEBI:25413" ;
+                                   rdfs:label "Monounsaturated Fatty Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#multicomponentFoodProduct
+altproton:multicomponentFoodProduct rdf:type owl:Class ;
+                                    rdfs:subClassOf altproton:foodProduct ;
+                                    altproton:ontologyID "FOODON:00002501" ;
+                                    rdfs:label "Multi-component food product" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#naturalToxins
+altproton:naturalToxins rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:foodSafety ;
+                        altproton:altprotonID "ALTPROTON:000011" ;
+                        rdfs:label "Natural Toxins" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#netPresentValue
+altproton:netPresentValue rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:economicalImpacts ;
+                          rdfs:label "Net Present Value" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#novel
+altproton:novel rdf:type owl:Class ;
+                rdfs:subClassOf altproton:proteinSourceClassification ;
+                rdfs:label "Novel" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutrient
+altproton:nutrient rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:nutritionalQuality ;
+                   altproton:altprotonID "ALTPROTON:000033" ;
+                   altproton:ontologyID "CHEBI:33284" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutritionalCompositionFacts
+altproton:nutritionalCompositionFacts rdf:type owl:Class ;
+                                      rdfs:subClassOf altproton:facts .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#nutritionalQuality
+altproton:nutritionalQuality rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:quality ;
+                             altproton:altprotonID "ALTPROTON:000003" ;
+                             rdfs:label "Nutritional Quality" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#omega3FattyAcid
+altproton:omega3FattyAcid rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:polyUnsaturatedFattyAcid ;
+                          altproton:altprotonID "ALTPROTON:000058" ;
+                          altproton:hasSynonym "Omega-3 Fatty Acid" ;
+                          altproton:ontologyID "CHEBI:25681" ,
+                                               "NCIT:C493" ;
+                          rdfs:label "ω−3 Fatty Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#omega6FattyAcid
+altproton:omega6FattyAcid rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:polyUnsaturatedFattyAcid ;
+                          altproton:altprotonID "ALTPROTON:000059" ;
+                          altproton:hasSynonym "Omega-6 Fatty Acid" ;
+                          altproton:ontologyID "CHEBI:36009" ,
+                                               "NCTI:C2563" ;
+                          rdfs:label "ω−6 Fatty Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#operatingExpenses
+altproton:operatingExpenses rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:hasCostOn ;
+                                              owl:someValuesFrom altproton:electricity
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:hasCostOn ;
+                                              owl:someValuesFrom altproton:environmentalLevies
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:hasCostOn ;
+                                              owl:someValuesFrom altproton:fuel
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:hasCostOn ;
+                                              owl:someValuesFrom altproton:heat
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:hasCostOn ;
+                                              owl:someValuesFrom altproton:insurance
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:hasCostOn ;
+                                              owl:someValuesFrom altproton:material
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:hasCostOn ;
+                                              owl:someValuesFrom altproton:rentalCharges
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:hasCostOn ;
+                                              owl:someValuesFrom altproton:thirdPartyServices
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty altproton:hasCostOn ;
+                                              owl:someValuesFrom altproton:water
+                                            ] ;
+                            rdfs:label "Operating Expenses" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#opexOfTheActor
+altproton:opexOfTheActor rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:economicalImpacts ;
+                         rdfs:label "Opex of the actor" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#organicFoodProduction
+altproton:organicFoodProduction rdf:type owl:Class ;
+                                rdfs:subClassOf altproton:agriculturalFoodProduction ;
+                                altproton:hasSynonym "organic farming" ;
+                                altproton:ontologyID "FOODON:03530291" ;
+                                rdfs:label "organic food production" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#output
+altproton:output rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:flow .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#overallSustainability
+altproton:overallSustainability rdf:type owl:Class ;
+                                rdfs:subClassOf altproton:sustainability ;
+                                rdfs:label "Overall Sustainability" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#ozoneDepletion
+altproton:ozoneDepletion rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:environmentalImpacts ;
+                         rdfs:label "Ozone depletion" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pH
+altproton:pH rdf:type owl:Class ;
+             rdfs:subClassOf altproton:technofunctionalProperty ;
+             altproton:altprotonID "ALTPROTON:000131" ;
+             rdfs:label "pH" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSize
+altproton:particleSize rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:technofunctionalProperty ;
+                       altproton:altprotonID "ALTPROTON:000130" ;
+                       rdfs:label "Particle size" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeDryD10
+altproton:particleSizeDryD10 rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:dryLaserDiffraction ;
+                             altproton:altprotonID "ALTPROTON:000137" ;
+                             rdfs:label "Particle size dry D10" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeDryD50
+altproton:particleSizeDryD50 rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:dryLaserDiffraction ;
+                             altproton:altprotonID "ALTPROTON:000138" ;
+                             rdfs:label "Particle size dry D50" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeDryD90
+altproton:particleSizeDryD90 rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:dryLaserDiffraction ;
+                             altproton:altprotonID "ALTPROTON:000139" ;
+                             rdfs:label "Particle size dry D90" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeWetD10
+altproton:particleSizeWetD10 rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:wetLaserDiffraction ;
+                             altproton:altprotonID "ALTPROTON:000140" ;
+                             rdfs:label "Particle size wet D10" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeWetD50
+altproton:particleSizeWetD50 rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:wetLaserDiffraction ;
+                             altproton:altprotonID "ALTPROTON:000141" ;
+                             rdfs:label "Particle size wet D50" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particleSizeWetD90
+altproton:particleSizeWetD90 rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:wetLaserDiffraction ;
+                             altproton:altprotonID "ALTPROTON:000142" ;
+                             rdfs:label "Particle size wet D90" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#particulateMatter
+altproton:particulateMatter rdf:type owl:Class ;
+                            rdfs:subClassOf altproton:environmentalImpacts ;
+                            rdfs:label "Particulate matter" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pea
+altproton:pea rdf:type owl:Class ;
+              rdfs:subClassOf altproton:traditional ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty altproton:hasGeneralIdentification ;
+                                owl:allValuesFrom altproton:plantBased
+                              ] ;
+              rdfs:label "Pea" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pesticideResidues
+altproton:pesticideResidues rdf:type owl:Class ;
+                            rdfs:subClassOf altproton:agrochemical ;
+                            altproton:altprotonID "ALTPROTON:000023" ;
+                            altproton:ontologyID "OMIT:0011564" ;
+                            rdfs:label "Pesticide Residues" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#photochemicalOzoneFormationHumanHealth
+altproton:photochemicalOzoneFormationHumanHealth rdf:type owl:Class ;
+                                                 rdfs:subClassOf altproton:environmentalImpacts ;
+                                                 rdfs:label "Photochemical ozone formation, human health" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#phyticAcid
+altproton:phyticAcid rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:antinutritionalFactors ;
+                     altproton:altprotonID "ALTPROTON:000036" ;
+                     altproton:ontologyID "NCIT:C87652" ;
+                     rdfs:label "Phytic acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#planSpecification
+altproton:planSpecification rdf:type owl:Class ;
+                            altproton:ontologyID "IAO:0000104" ;
+                            rdfs:label "Plan specification" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#plannedProcess
+altproton:plannedProcess rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty altproton:has ;
+                                           owl:someValuesFrom altproton:planSpecification
+                                         ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#plantBased
+altproton:plantBased rdf:type owl:Class ;
+                     rdfs:subClassOf altproton:proteinSourceOrigin ;
+                     rdfs:label "Plant-based" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#polyUnsaturatedFattyAcid
+altproton:polyUnsaturatedFattyAcid rdf:type owl:Class ;
+                                   rdfs:subClassOf altproton:fattyAcid ;
+                                   altproton:altprotonID "ALTPROTON:000056" ;
+                                   altproton:hasSynonym "PUFA" ;
+                                   altproton:ontologyID "CHEBI:26208" ;
+                                   rdfs:label "Polyunsaturated Fatty Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pork
+altproton:pork rdf:type owl:Class ;
+               rdfs:subClassOf altproton:traditional ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty altproton:hasGeneralIdentification ;
+                                 owl:allValuesFrom altproton:animalBased
+                               ] ;
+               rdfs:label "Pork" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#potato
+altproton:potato rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:traditional ;
+                 rdfs:label "Potato" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#preventionAndMitigationOfConflicts
+altproton:preventionAndMitigationOfConflicts rdf:type owl:Class ;
+                                             rdfs:subClassOf altproton:socialImpacts ;
+                                             rdfs:label "Prevention and mitigation of conflicts" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#product
+altproton:product rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:output ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:generates ;
+                                    owl:someValuesFrom altproton:revenue
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:has ;
+                                    owl:someValuesFrom altproton:indicator
+                                  ] ;
+                  rdfs:label "Product" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proline
+altproton:proline rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                  altproton:altprotonID "ALTPROTON:000116" ;
+                  altproton:hasSynonym "P" ,
+                                       "Pro" ;
+                  altproton:ontologyID "CHEBI:17203" ;
+                  rdfs:label "Proline (Pro/P)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#promotingSocialResponsibility
+altproton:promotingSocialResponsibility rdf:type owl:Class ;
+                                        rdfs:subClassOf altproton:socialImpacts ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty altproton:affectsOn ;
+                                                          owl:someValuesFrom altproton:stakeholders
+                                                        ] ;
+                                        rdfs:label "Promoting social responsibility" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinDigestibility
+altproton:proteinDigestibility rdf:type owl:Class ;
+                               rdfs:subClassOf altproton:proteinQuality ;
+                               altproton:altprotonID "ALTPROTON:000095" ;
+                               rdfs:label "Protein digestibility" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinQuality
+altproton:proteinQuality rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:nutritionalQuality ;
+                         altproton:altprotonID "ALTPROTON:000034" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubility
+altproton:proteinSolubility rdf:type owl:Class ;
+                            rdfs:subClassOf altproton:technofunctionalProperty ;
+                            altproton:altprotonID "ALTPROTON:000132" ;
+                            rdfs:label "Protein solubility" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtNativePH
+altproton:proteinSolubilityAtNativePH rdf:type owl:Class ;
+                                      rdfs:subClassOf altproton:proteinSolubility ;
+                                      altproton:altprotonID "ALTPROTON:000143" ;
+                                      rdfs:label "Protein solubility at native pH" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH11
+altproton:proteinSolubilityAtPH11 rdf:type owl:Class ;
+                                  rdfs:subClassOf altproton:proteinSolubility ;
+                                  altproton:altprotonID "ALTPROTON:000144" ;
+                                  rdfs:label "Protein solubility at pH 11" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH3
+altproton:proteinSolubilityAtPH3 rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:proteinSolubility ;
+                                 altproton:altprotonID "ALTPROTON:000145" ;
+                                 rdfs:label "Protein solubility at pH 3" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH5
+altproton:proteinSolubilityAtPH5 rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:proteinSolubility ;
+                                 altproton:altprotonID "ALTPROTON:000146" ;
+                                 rdfs:label "Protein solubility at pH 5" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH7
+altproton:proteinSolubilityAtPH7 rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:proteinSolubility ;
+                                 altproton:altprotonID "ALTPROTON:000147" ;
+                                 rdfs:label "Protein solubility at pH 7" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSolubilityAtPH9
+altproton:proteinSolubilityAtPH9 rdf:type owl:Class ;
+                                 rdfs:subClassOf altproton:proteinSolubility ;
+                                 altproton:altprotonID "ALTPROTON:000148" ;
+                                 rdfs:label "Protein solubility at pH 9" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSource
+altproton:proteinSource rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:SpirulinaSp
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:beef
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:chicken
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:chickpea
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:chlorella
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:cricket
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:culturedBeef
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:egg
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:fabaBeans
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:fish
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:fishSideStreams
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:krill
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:lentil
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:milk
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:pea
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:pork
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:potato
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:quinoa
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:rapeseed
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:solein
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:soy
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasGeneralIdentification ;
+                                          owl:someValuesFrom altproton:wheat
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasOrigin ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass altproton:proteinSourceOrigin
+                                        ] ;
+                        rdfs:label "Protein Source" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSourceClassification
+altproton:proteinSourceClassification rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#proteinSourceOrigin
+altproton:proteinSourceOrigin rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#pyrrolysine
+altproton:pyrrolysine rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                      altproton:altprotonID "ALTPROTON:000117" ;
+                      altproton:hasSynonym "O" ,
+                                           "Pyl" ;
+                      altproton:ontologyID "CHEBI:21860" ;
+                      rdfs:label "Pyrrolysine (Pyl/O)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#quality
+altproton:quality rdf:type owl:Class ;
+                  altproton:altprotonID "ALTPROTON:000001" ;
+                  altproton:ontologyID "PATO:0000001" ;
+                  rdfs:label "Quality" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#quinoa
+altproton:quinoa rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:novel ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty altproton:hasGeneralIdentification ;
+                                   owl:allValuesFrom altproton:plantBased
+                                 ] ;
+                 rdfs:label "Quinoa" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#rapeseed
+altproton:rapeseed rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:novel ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty altproton:hasGeneralIdentification ;
+                                     owl:allValuesFrom altproton:plantBased
+                                   ] ;
+                   rdfs:label "Rapeseed" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#rentalCharges
+altproton:rentalCharges rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:utilities ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasPart ;
+                                          owl:someValuesFrom altproton:agriculturalLand
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasPart ;
+                                          owl:someValuesFrom altproton:buildings
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasPart ;
+                                          owl:someValuesFrom altproton:capitalExpenditure
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:hasPart ;
+                                          owl:someValuesFrom altproton:infrastructure
+                                        ] ;
+                        rdfs:label "Rental charges" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#resourceUseFossils
+altproton:resourceUseFossils rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:environmentalImpacts ;
+                             rdfs:label "Resource use, fossils" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#resourceUseMineralsAndMetals
+altproton:resourceUseMineralsAndMetals rdf:type owl:Class ;
+                                       rdfs:subClassOf altproton:environmentalImpacts ;
+                                       rdfs:label "Resource use, minerals, and metals" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#respectOfIndigenousRights
+altproton:respectOfIndigenousRights rdf:type owl:Class ;
+                                    rdfs:subClassOf altproton:socialImpacts ;
+                                    rdfs:label "Respect of Indigenous rights" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#revenue
+altproton:revenue rdf:type owl:Class ;
+                  rdfs:label "Revenue" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#safeAndHealthyLivingConditions
+altproton:safeAndHealthyLivingConditions rdf:type owl:Class ;
+                                         rdfs:subClassOf altproton:socialImpacts ;
+                                         rdfs:label "Safe and healthy living conditions" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#saturatedFattyAcid
+altproton:saturatedFattyAcid rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:fattyAcid ;
+                             altproton:altprotonID "ALTPROTON:000057" ;
+                             altproton:ontologyID "CHEBI:26607" ;
+                             rdfs:label "Saturated Fatty Acid" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#scientificName
+altproton:scientificName rdf:type owl:Class ;
+                         altproton:ontologyID "NCIT:C43459" ;
+                         rdfs:label "Scientific Name" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#selenocysteine
+altproton:selenocysteine rdf:type owl:Class ;
+                         rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                         altproton:altprotonID "ALTPROTON:000118" ;
+                         altproton:hasSynonym "Sec" ,
+                                              "U" ;
+                         altproton:ontologyID "CHEBI:16633" ;
+                         rdfs:label "Selenocysteine (Sec/U)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sensoryProperty
+altproton:sensoryProperty rdf:type owl:Class ;
+                          rdfs:subClassOf altproton:quality ;
+                          altproton:altprotonID "ALTPROTON:000004" ;
+                          rdfs:label "Sensory property" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#serine
+altproton:serine rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                 altproton:altprotonID "ALTPROTON:000119" ;
+                 altproton:hasSynonym "S" ,
+                                      "Ser" ;
+                 altproton:ontologyID "CHEBI:17115" ;
+                 rdfs:label "Serine (Ser/S)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#socialBenefitsLegalIssues
+altproton:socialBenefitsLegalIssues rdf:type owl:Class ;
+                                    rdfs:subClassOf altproton:socialImpacts ;
+                                    rdfs:label "Social benefits, legal issues" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#socialImpacts
+altproton:socialImpacts rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:indicator ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:affectsOn ;
+                                          owl:someValuesFrom altproton:stakeholders
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty altproton:derives ;
+                                          owl:someValuesFrom altproton:socialSustainability
+                                        ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#socialSustainability
+altproton:socialSustainability rdf:type owl:Class ;
+                               rdfs:subClassOf altproton:sustainability ;
+                               rdfs:label "Social Sustainability" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#society
+altproton:society rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:stakeholders ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:contributionToEconomicDevelopment
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:healthAndSafety
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:preventionAndMitigationOfConflicts
+                                  ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#solein
+altproton:solein rdf:type owl:Class ;
+                 rdfs:subClassOf altproton:novel ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty altproton:hasGeneralIdentification ;
+                                   owl:allValuesFrom altproton:bacteriaBased
+                                 ] ;
+                 rdfs:label "Solein" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#solubleDietaryFibre
+altproton:solubleDietaryFibre rdf:type owl:Class ;
+                              rdfs:subClassOf altproton:dietaryFibre ;
+                              altproton:altprotonID "ALTPROTON:000053" ;
+                              altproton:ontologyID "CDNO:0000006" ;
+                              rdfs:label "Soluble Dietary Fibre" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#soy
+altproton:soy rdf:type owl:Class ;
+              rdfs:subClassOf altproton:novel ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty altproton:hasGeneralIdentification ;
+                                owl:allValuesFrom altproton:plantBased
+                              ] ;
+              rdfs:label "Soy" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#stakeholders
+altproton:stakeholders rdf:type owl:Class ;
+                       rdfs:label "Stakeholders" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sucrose
+altproton:sucrose rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:freeSugar ;
+                  altproton:altprotonID "ALTPROTON:000051" ;
+                  altproton:ontologyID "CHEBI:17992" ;
+                  rdfs:label "Sucrose" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#sustainability
+altproton:sustainability rdf:type owl:Class ;
+                         rdfs:label "Sustainability" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#technofunctionalProperty
+altproton:technofunctionalProperty rdf:type owl:Class ;
+                                   rdfs:subClassOf altproton:quality ;
+                                   altproton:altprotonID "ALTPROTON:000005" ;
+                                   rdfs:label "Techno functional property" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#temporalIdentification
+altproton:temporalIdentification rdf:type owl:Class ;
+                                 rdfs:label "Temporal identification" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#thirdPartyServices
+altproton:thirdPartyServices rdf:type owl:Class ;
+                             rdfs:subClassOf altproton:utilities ;
+                             rdfs:label "Third-party services" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#totalProductionCost
+altproton:totalProductionCost rdf:type owl:Class ;
+                              rdfs:subClassOf altproton:economicalImpacts ;
+                              rdfs:label "Total production cost" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#traditional
+altproton:traditional rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:proteinSourceClassification ;
+                      rdfs:label "Traditional" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#tyrosine
+altproton:tyrosine rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:Non-EssentialAminoAcid ;
+                   altproton:altprotonID "ALTPROTON:000120" ;
+                   altproton:hasSynonym "Tyr" ,
+                                        "Y" ;
+                   altproton:ontologyID "CHEBI:17895" ;
+                   rdfs:label "Tyrosine (Tyr/Y)" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#utilities
+altproton:utilities rdf:type owl:Class ;
+                    rdfs:label "Utilities" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#valueAddedOfTheActor
+altproton:valueAddedOfTheActor rdf:type owl:Class ;
+                               rdfs:subClassOf altproton:economicalImpacts ;
+                               rdfs:label "Value added of the actor" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#valueChainActors
+altproton:valueChainActors rdf:type owl:Class ;
+                           rdfs:subClassOf altproton:stakeholders ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty altproton:hasSocialIndicator ;
+                                             owl:someValuesFrom altproton:corruption
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty altproton:hasSocialIndicator ;
+                                             owl:someValuesFrom altproton:fairCompetition
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty altproton:hasSocialIndicator ;
+                                             owl:someValuesFrom altproton:promotingSocialResponsibility
+                                           ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#variableCostsOfTheActor
+altproton:variableCostsOfTheActor rdf:type owl:Class ;
+                                  rdfs:subClassOf altproton:economicalImpacts ;
+                                  rdfs:label "Variable costs of the actor" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vehicle
+altproton:vehicle rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:infrastructure ;
+                  rdfs:label "Vehicle" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#viscosity
+altproton:viscosity rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:technofunctionalProperty ;
+                    altproton:altprotonID "ALTPROTON:000133" ;
+                    rdfs:label "Viscosity" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#viscosityAt95
+altproton:viscosityAt95 rdf:type owl:Class ;
+                        rdfs:subClassOf altproton:viscosity ;
+                        altproton:altprotonID "ALTPROTON:000151" ;
+                        rdfs:label "Viscosity at 95 °C" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitamin
+altproton:vitamin rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:micronutrient ;
+                  altproton:altprotonID "ALTPROTON:000066" ;
+                  altproton:ontologyID "CHEBI:33229" ;
+                  rdfs:label "vitamin" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminA
+altproton:vitaminA rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:vitamin ;
+                   altproton:altprotonID "ALTPROTON:000083" ;
+                   altproton:ontologyID "CHEBI:12777" ;
+                   rdfs:label "vitamin A" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB
+altproton:vitaminB rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:vitamin ;
+                   altproton:altprotonID "ALTPROTON:000084" ;
+                   altproton:ontologyID "CHEBI:75769" ;
+                   rdfs:label "vitamin B" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB1
+altproton:vitaminB1 rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:vitaminB ;
+                    altproton:altprotonID "ALTPROTON:000088" ;
+                    altproton:ontologyID "CHEBI:26948" ;
+                    rdfs:label "vitamin B1" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB2
+altproton:vitaminB2 rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:vitaminB ;
+                    altproton:altprotonID "ALTPROTON:000089" ;
+                    altproton:ontologyID "CHEBI:176838" ;
+                    rdfs:label "vitamin B2" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB3
+altproton:vitaminB3 rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:vitaminB ;
+                    altproton:altprotonID "ALTPROTON:000090" ;
+                    altproton:ontologyID "CHEBI:176839" ;
+                    rdfs:label "vitamin B3" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB6
+altproton:vitaminB6 rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:vitaminB ;
+                    altproton:altprotonID "ALTPROTON:000091" ;
+                    altproton:ontologyID "CHEBI:27306" ;
+                    rdfs:label "vitamin B6" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB7
+altproton:vitaminB7 rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:vitaminB ;
+                    altproton:altprotonID "ALTPROTON:000092" ;
+                    altproton:ontologyID "CHEBI:176841" ;
+                    rdfs:label "vitamin B7" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminB9
+altproton:vitaminB9 rdf:type owl:Class ;
+                    rdfs:subClassOf altproton:vitaminB ;
+                    altproton:altprotonID "ALTPROTON:000093" ;
+                    altproton:ontologyID "CHEBI:176842" ;
+                    rdfs:label "vitamin B9" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminC
+altproton:vitaminC rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:vitamin ;
+                   altproton:altprotonID "ALTPROTON:000085" ;
+                   altproton:ontologyID "CHEBI:176783" ;
+                   rdfs:label "vitamin C" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminD
+altproton:vitaminD rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:vitamin ;
+                   altproton:altprotonID "ALTPROTON:000086" ;
+                   altproton:ontologyID "CHEBI:27300" ;
+                   rdfs:label "vitamin D" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#vitaminE
+altproton:vitaminE rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:vitamin ;
+                   altproton:altprotonID "ALTPROTON:000087" ;
+                   altproton:ontologyID "CHEBI:33234" ;
+                   rdfs:label "vitamin E" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#wasteAndEmissionToTreatment
+altproton:wasteAndEmissionToTreatment rdf:type owl:Class ;
+                                      rdfs:subClassOf altproton:output ;
+                                      rdfs:label "Waste and emission to treatment" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#water
+altproton:water rdf:type owl:Class ;
+                rdfs:subClassOf altproton:utilities ;
+                rdfs:label "Water" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#waterHoldingCapacity
+altproton:waterHoldingCapacity rdf:type owl:Class ;
+                               rdfs:subClassOf altproton:technofunctionalProperty ;
+                               altproton:altprotonID "ALTPROTON:000134" ;
+                               rdfs:label "Water holding capacity" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#waterUse
+altproton:waterUse rdf:type owl:Class ;
+                   rdfs:subClassOf altproton:environmentalImpacts ;
+                   rdfs:label "Water use" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#wetLaserDiffraction
+altproton:wetLaserDiffraction rdf:type owl:Class ;
+                              rdfs:subClassOf altproton:particleSize ;
+                              altproton:altprotonID "ALTPROTON:000136" ;
+                              rdfs:label "Wet laser diffraction" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#wheat
+altproton:wheat rdf:type owl:Class ;
+                rdfs:subClassOf altproton:traditional ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty altproton:hasGeneralIdentification ;
+                                  owl:allValuesFrom altproton:plantBased
+                                ] ;
+                rdfs:label "Wheat" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#workerRights
+altproton:workerRights rdf:type owl:Class ;
+                       rdfs:subClassOf altproton:socialImpacts ;
+                       rdfs:label "Worker rights" .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#workers
+altproton:workers rdf:type owl:Class ;
+                  rdfs:subClassOf altproton:stakeholders ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:has ;
+                                    owl:someValuesFrom altproton:LabourCosts
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:childLabour
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:discrimination
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:fairSalary
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:forcedLabour
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:healthAndSafety
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:socialBenefitsLegalIssues
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:workerRights
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:hasSocialIndicator ;
+                                    owl:someValuesFrom altproton:workingTime
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty altproton:performs ;
+                                    owl:someValuesFrom altproton:activity
+                                  ] .
+
+
+###  http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#workingTime
+altproton:workingTime rdf:type owl:Class ;
+                      rdfs:subClassOf altproton:socialImpacts ;
+                      rdfs:label "Working time" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( altproton:avoidedProduct
+                altproton:product
+                altproton:wasteAndEmissionToTreatment
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( altproton:localCommunity
+                altproton:society
+                altproton:valueChainActors
+                altproton:workers
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
