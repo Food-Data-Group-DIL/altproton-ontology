@@ -10,10 +10,6 @@ rdfs:		http://www.w3.org/2000/01/rdf-schema#
 altproton:	http://www.semanticweb.org/d.rastogi/ontologies/2024/1/altproton#
 
 [MappingDeclaration] @collection [[
-mappingId	MAPID-c3a573f8162a4f1fa81f5023afa3b7bb
-target		<data:external_nutrients/{id}> a altproton:nutrient ; rdfs:label {nutrient} . 
-source		select id, nutrient from dcf_data.external_nutrients
-
 mappingId	MAPID-d72ec29f1bf648da89556bb032a7f006
 target		data:food_products/{id} a altproton:foodProduct ; rdfs:label {protein_source_or_food_product} . 
 source		select id,protein_source_or_food_product from dcf_data.food_sources
@@ -23,7 +19,7 @@ target		data:nutrients/{id} a altproton:nutrient ; rdfs:label {nutrient} .
 source		select id,nutrient from dcf_data.nutrients
 
 mappingId	MAPID-d5f37a08bd124a819370639a2880932a
-target		data:nutritionalCompositionFacts/{food_product_id}/{nutrient_id} a altproton:nutritionalCompositionFacts ; altproton:hasFoodProduct data:food_products/{food_product_id} ; altproton:hasQualityAspect data:external_nutrients/{nutrient_id} ; altproton:hasNumericalValue {amount} ; altproton:hasUnit {unit} ; altproton:hasStandardDeviation {sd} ; altproton:hasAnalysisMethod {method_of_analysis} . 
+target		data:nutritionalCompositionFacts/{food_product_id}/{nutrient_id} a altproton:nutritionalCompositionFacts ; altproton:hasFoodProduct data:food_products/{food_product_id} ; altproton:hasQualityAspect data:nutrients/{nutrient_id} ; altproton:hasNumericalValue {amount} ; altproton:hasUnit {unit} ; altproton:hasStandardDeviation {sd} ; altproton:hasAnalysisMethod {method_of_analysis} . 
 source		select fdsr.food_product_id ,ncf.nutrient_id,ncf.amount,ncf.unit,ncf.sd,ncf.method_of_analysis,ncf."comment"  from dcf_data.nutrient_composition_facts ncf
 			join dcf_data.food_data_source_relations fdsr
 			on ncf.food_data_source_relation_id = fdsr.id
@@ -37,5 +33,28 @@ target		data:anf_Facts/{food_product_id}/{anf_id} a altproton:anfFact ; altproto
 source		select fdsr.food_product_id ,ncf.anf_id ,ncf.amount,ncf.unit,ncf.sd,ncf.method_of_analysis,ncf."comment"  from dcf_data.antinutritional_factor_facts ncf
 			join dcf_data.food_data_source_relations fdsr
 			on ncf.food_data_source_relation_id = fdsr.id
+
+mappingId	MAPID-5b17b04c68584ddbbddf7664d0082975
+target		data:environmental_indicators/{id} a altproton:environmentalImpacts ; rdfs:label {indicator_name} . 
+source		select id,indicator_name  from dcf_data.elca_environment_indicators eei
+
+mappingId	MAPID-5372aa5bd2494c5d9350c01ba42abe9a
+target		data:activity/{id} a altproton:activity ; altproton:has data:food_products/{food_product_id} ; rdfs:label {activity_name} ; altproton:referenceUnit {reference_unit} . 
+source		select eia.id ,activity_name,reference_unit,fs2.id as food_product_id  from dcf_data.temp_elca_inv_activities eia
+			join dcf_data.food_data_source_relations fdsr ON
+			eia.food_data_source_relation_id = fdsr.id
+			join dcf_data.food_sources fs2
+			on fs2.id = fdsr.food_product_id
+
+mappingId	MAPID-1fa250c484f24eb293cacaa3f61df241
+target		data:ei_Facts/{product_id}/{eid} a altproton:environmentalImpactFacts ; altproton:hasProduct data:food_products/{product_id} ; altproton:hasEnvironmentalIndicator data:environmental_indicators/{eid} ; altproton:hasNumericalValue {amount_or_impact_value} ; altproton:hasUnit {unit} ; altproton:hasStandardDeviation {sd} ; altproton:hasAnalysisMethod {method_of_analysis} . 
+source		select eeif.id, fs2.id as product_id,eeif.env_indicator_id as eid, eeif.amount_or_impact_value,eeif.unit , eeif.sd , eeif.method_of_analysis  from dcf_data.elca_environment_indicator_facts eeif
+			join dcf_data.temp_elca_inv_activities eia
+			on eia.id = eeif.activity_id
+			join dcf_data.food_data_source_relations fdsr
+			on eia.food_data_source_relation_id = fdsr.id
+			join dcf_data.food_sources fs2
+			on fdsr.food_product_id = fs2.id
+			where eeif.amount_or_impact_value is not null
 ]]
 
